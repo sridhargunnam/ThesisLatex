@@ -1,0 +1,34 @@
+\chapter{Introduction}
+Usecases \newline
+Overview of paper \newline
+
+use cases - mobile 360 capture, AR, VR, MR, Autonomous Driving. \newline
+
+Usecase1: 360 stereo capture for experiencing in VR headsets. 
+[xx1] Sports live stream (only few powerful ones are sufficient)
+For general purpose capture and streaming, we need portable and long capture time capable. Existing VR cameras are available in small and large form factors but they have limited live streaming capabilities and don't have good battery life(60 minutes max). 
+% This is mostly because they use off the shelf camera devices, and ISP's and general purpose computing like CPU, GPU in the processing pipeline. We believe that optimizing the algorithms and systems by taking the inherent qualities of video compression can remove the data access and computation redundancies. 
+
+Usecase2: In Mixed reality headsets(military training, gaming, etc) we capture and overlay virtual objects and display. So latency critical stitching. 
+%  (check examples 2 :https://en.wikipedia.org/wiki/Mixed_reality), 
+
+Usecase3: Hybrid, 360 monoscopic and stereoscopic capture and display.
+
+Status quo:
+Existing 360 camera solutions. \newline
+%\cite{Milbeaut-ISP}
+
+
+
+Characterizing monoscopic, stereoscopic, bottlenecks, optimization
+
+
+360 video is essential for VR, but capturing and stitching them in real-time is limited by battery life. Even if battery technologies improve, capturing and stitching 360 video will have heating issues, thereby increasing skin temperature. In-order to tackle the challenge of capturing and stitching on same device, we study the system level bottlenecks in energy and performance by building a prototype. Our findings suggest that the main reason for the inefficiency is caused by building the system from off the shelf camera and traditional stitching algorithms. 
+
+Conventional 360 degree is captured using a multi-camera rig and the expensive stitching is offloaded to powerful machines. Although some systems exist where stitching is done online, they are limited by output resolution, framerate and battery life. We show that the inefficiencies in the pipeline due to lack of hardware algorithm co-design. In this paper we study the data flow of the stitching pipeline by building a protype using 6 camera system. We analyse the energy and performance bottlenecks in the pipeline and analytically evaluate the mechanisms like using motion vectors to reduce temporal data access and computation, use raster buffers instead of full image to optimize on memory, and chip area. 
+
+
+Although commercial 360 degree solutions exist, they are mostly used for capture and stitching is offloaded to powerful machines. This limits the usability of 360 in VR and also portability and for heating. Our goal is therefore to build a 360 camera system that optimizes the entire pipeline both in hardware and software. We characterize the traditional pipeline and propose
+
+
+
