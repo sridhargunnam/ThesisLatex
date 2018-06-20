@@ -6,9 +6,9 @@ CHAPTER \par
 \contentsline {chapter}{\numberline {2}{\MakeUppercase {Background}}}{3}{chapter.2}
 \contentsline {chapter}{\numberline {3}{\MakeUppercase {Characterization}}}{4}{chapter.3}
 \contentsline {section}{\numberline {3.1}Energy Measurement Methodology}{5}{section.3.1}
-\contentsline {chapter}{\numberline {4}{\MakeUppercase {Proposed mechanisms for energy and performance savings}}}{8}{chapter.4}
-\contentsline {chapter}{\numberline {5}{\MakeUppercase {Discussion}}}{10}{chapter.5}
-\contentsline {chapter}{\numberline {6}{\MakeUppercase {Conclusion and future work}}}{11}{chapter.6}
-\contentsline {part}{REFERENCES}{12}{chapter.6}
+\contentsline {chapter}{\numberline {4}{\MakeUppercase {Proposed mechanisms for energy and performance savings}}}{9}{chapter.4}
+\contentsline {chapter}{\numberline {5}{\MakeUppercase {Discussion}}}{11}{chapter.5}
+\contentsline {chapter}{\numberline {6}{\MakeUppercase {Conclusion and future work}}}{12}{chapter.6}
+\contentsline {part}{REFERENCES}{13}{chapter.6}
 APPENDIX \par 
-\contentsline {chapter}{\numberline {A}{\MakeUppercase {Raw Data}}}{13}{appendix.A}
+\contentsline {chapter}{\numberline {A}{\MakeUppercase {Raw Data}}}{14}{appendix.A}

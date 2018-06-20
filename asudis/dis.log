@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.28)  20 JUN 2018 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.28)  20 JUN 2018 14:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -381,8 +381,12 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip97
 )
 (./dis.aux (./abstract.aux) (./ack.aux) (./chapter1.aux) (./chapter2.aux)
-(./chapter3.aux) (./chapter5.aux) (./chapter6.aux) (./chapter7.aux)
-(./appendix1.aux) (./vita.aux))
+(./chapter3.aux
+
+LaTeX Warning: Label `fig:ex_4_9' multiply defined.
+
+) (./chapter5.aux) (./chapter6.aux) (./chapter7.aux) (./appendix1.aux)
+(./vita.aux))
 \openout1 = `dis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -768,10 +772,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--62
 
  []
 
-[6]) [7]
+[6]
+</media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Camera_I
+SP_Stages_in_different_configurations.png, id=113, 811.03pt x 500.87125pt>
+File: /media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Cam
+era_ISP_Stages_in_different_configurations.png Graphic file (type png)
+<use /media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Came
+ra_ISP_Stages_in_different_configurations.png>
+Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Powe
+r_Efficiency_of_Camera_ISP_Stages_in_different_configurations.png  used on inpu
+t line 68. on input line 68.
+Package pdftex.def Info: Requested size: 433.62001pt x 267.79915pt on input lin
+e 68.
+</media/gunman/Data/thesis/ThesisLatex/data/images/FramesizevsFramenumber.png, 
+id=114, 602.25pt x 372.39125pt>
+File: /media/gunman/Data/thesis/ThesisLatex/data/images/FramesizevsFramenumber.
+png Graphic file (type png)
+<use /media/gunman/Data/thesis/ThesisLatex/data/images/FramesizevsFramenumber.p
+ng>
+Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Fram
+esizevsFramenumber.png  used on input line 80. on input line 80.
+Package pdftex.def Info: Requested size: 433.62001pt x 268.13286pt on input lin
+e 80.
+ [7 </media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Came
+ra_ISP_Stages_in_different_configurations.png (PNG copy)>]) [8 </media/gunman/D
+ata/thesis/ThesisLatex/data/images/FramesizevsFramenumber.png (PNG copy)>]
 \openout2 = `chapter5.aux'.
 
- (./chapter5.tex
+
+(./chapter5.tex
 Chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -793,7 +822,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--27
 
  []
 
-[8
+[9
 
 
 
@@ -812,12 +841,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--48
 
  []
 
-) [9]
+) [10]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
 Chapter 5.
-) [10
+) [11
 
 
 
@@ -826,7 +855,7 @@ Chapter 5.
 
  (./chapter7.tex
 Chapter 6.
-) [11
+) [12
 
 
 
@@ -834,14 +863,14 @@ Chapter 6.
 
 Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-) [12
+) [13
 
 ]
 \openout2 = `appendix1.aux'.
 
  (./appendix1.tex
 Appendix A.
-) [13
+) [14
 
 
 ]
@@ -857,26 +886,30 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `dis.out' has not changed.
 (rerunfilecheck)             Checksum: 35910184C7EB12EDB659F8BBD05671E7;552.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 7447 strings out of 492995
- 105960 string characters out of 6135073
- 203669 words of memory out of 5000000
- 10791 multiletter control sequences out of 15000+600000
- 23969 words of font info for 35 fonts, out of 8000000 for 9000
+ 7466 strings out of 492995
+ 107001 string characters out of 6135073
+ 203761 words of memory out of 5000000
+ 10802 multiletter control sequences out of 15000+600000
+ 26915 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,11n,43p,918b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr
-/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/
-lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/tex
-mf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmt
-t12.pfb>
-Output written on dis.pdf (19 pages, 81052 bytes).
+c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/sha
+re/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/
+lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lms
+y10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on dis.pdf (20 pages, 132723 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 
