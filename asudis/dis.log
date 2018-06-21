@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.28)  20 JUN 2018 14:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.28)  20 JUN 2018 21:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -382,6 +382,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 (./dis.aux (./abstract.aux) (./ack.aux) (./chapter1.aux) (./chapter2.aux)
 (./chapter3.aux
+
+LaTeX Warning: Label `fig:ex_4_9' multiply defined.
+
 
 LaTeX Warning: Label `fig:ex_4_9' multiply defined.
 
@@ -774,7 +777,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--62
 
 [6]
 </media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Camera_I
-SP_Stages_in_different_configurations.png, id=113, 811.03pt x 500.87125pt>
+SP_Stages_in_different_configurations.png, id=115, 811.03pt x 500.87125pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Cam
 era_ISP_Stages_in_different_configurations.png Graphic file (type png)
 <use /media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Came
@@ -784,23 +787,34 @@ r_Efficiency_of_Camera_ISP_Stages_in_different_configurations.png  used on inpu
 t line 68. on input line 68.
 Package pdftex.def Info: Requested size: 433.62001pt x 267.79915pt on input lin
 e 68.
+</media/gunman/Data/thesis/ThesisLatex/data/images/ExecutionTimeComputeStages.p
+ng, id=116, 602.25pt x 372.39125pt>
+File: /media/gunman/Data/thesis/ThesisLatex/data/images/ExecutionTimeComputeSta
+ges.png Graphic file (type png)
+<use /media/gunman/Data/thesis/ThesisLatex/data/images/ExecutionTimeComputeStag
+es.png>
+Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Exec
+utionTimeComputeStages.png  used on input line 83. on input line 83.
+Package pdftex.def Info: Requested size: 433.62001pt x 268.13286pt on input lin
+e 83.
+ [7 </media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Came
+ra_ISP_Stages_in_different_configurations.png (PNG copy)>]
 </media/gunman/Data/thesis/ThesisLatex/data/images/FramesizevsFramenumber.png, 
-id=114, 602.25pt x 372.39125pt>
+id=124, 602.25pt x 372.39125pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/FramesizevsFramenumber.
 png Graphic file (type png)
 <use /media/gunman/Data/thesis/ThesisLatex/data/images/FramesizevsFramenumber.p
 ng>
 Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Fram
-esizevsFramenumber.png  used on input line 80. on input line 80.
+esizevsFramenumber.png  used on input line 99. on input line 99.
 Package pdftex.def Info: Requested size: 433.62001pt x 268.13286pt on input lin
-e 80.
- [7 </media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Came
-ra_ISP_Stages_in_different_configurations.png (PNG copy)>]) [8 </media/gunman/D
-ata/thesis/ThesisLatex/data/images/FramesizevsFramenumber.png (PNG copy)>]
+e 99.
+ [8 </media/gunman/Data/thesis/ThesisLatex/data/images/ExecutionTimeComputeStag
+es.png (PNG copy)>]) [9 </media/gunman/Data/thesis/ThesisLatex/data/images/Fram
+esizevsFramenumber.png (PNG copy)>]
 \openout2 = `chapter5.aux'.
 
-
-(./chapter5.tex
+ (./chapter5.tex
 Chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -822,7 +836,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--27
 
  []
 
-[9
+[10
 
 
 
@@ -841,12 +855,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--48
 
  []
 
-) [10]
+) [11]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
 Chapter 5.
-) [11
+) [12
 
 
 
@@ -855,7 +869,7 @@ Chapter 5.
 
  (./chapter7.tex
 Chapter 6.
-) [12
+) [13
 
 
 
@@ -863,14 +877,14 @@ Chapter 6.
 
 Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-) [13
+) [14
 
 ]
 \openout2 = `appendix1.aux'.
 
  (./appendix1.tex
 Appendix A.
-) [14
+) [15
 
 
 ]
@@ -893,10 +907,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 7466 strings out of 492995
- 107001 string characters out of 6135073
- 203761 words of memory out of 5000000
- 10802 multiletter control sequences out of 15000+600000
+ 7473 strings out of 492995
+ 107387 string characters out of 6135073
+ 203762 words of memory out of 5000000
+ 10806 multiletter control sequences out of 15000+600000
  26915 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,11n,43p,918b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -906,10 +920,10 @@ re/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/
 lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/te
 xmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 y10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on dis.pdf (20 pages, 132723 bytes).
+Output written on dis.pdf (21 pages, 146199 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 99 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 104 words of extra memory for PDF output out of 10000 (max. 10000000)
 
