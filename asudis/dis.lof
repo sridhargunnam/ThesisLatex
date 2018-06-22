@@ -1,4 +1,5 @@
 Figure\nobreakspace {}\hfill Page \par 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Power Efficiency of Camera ISP Stages in different configurations}}{7}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces CPU execution time of different compute stages}}{8}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Framesize of I and P frames}}{9}{figure.3.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.}}{7}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces CPU execution time of different compute stages. X axis has different sub-stages in optical flow and Y axis correspond to energy per frame.}}{8}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Power Efficiency of Camera ISP Stages in different configurations}}{10}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Framesize of I and P frames}}{11}{figure.3.4}
