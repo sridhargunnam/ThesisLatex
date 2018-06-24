@@ -14,8 +14,8 @@ CHAPTER \par
 \contentsline {subsection}{\numberline {3.4.1}Individual Stage latency}{6}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Optical flow runtime breakdown}{7}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}Design Scalability}{7}{section.3.5}
-\contentsline {subsubsection}{Runtime scalability with the resolution}{7}{section*.1}
-\contentsline {subsubsection}{Resource scalability with the resolution}{8}{section*.2}
+\contentsline {subsubsection}{Runtime scalability with the resolution}{7}{section*.2}
+\contentsline {subsubsection}{Resource scalability with the resolution}{8}{section*.4}
 \contentsline {section}{\numberline {3.6}Evaluating data-flow redundancies}{9}{section.3.6}
 \contentsline {section}{\numberline {3.7}Misc}{10}{section.3.7}
 \contentsline {chapter}{\numberline {4}{\MakeUppercase {Proposed mechanisms for energy and performance savings}}}{12}{chapter.4}
