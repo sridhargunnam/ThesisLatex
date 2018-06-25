@@ -1,4 +1,13 @@
 \chapter{Introduction}
+
+From the experiences of having see monoscopic 360 videos on samsung gear VR, I felt that complete potential of VR devices is not being utilized. Although the current “Head Mounted Devices” devices are capable of showing 360 videos with depth information, we don’t have lot of content that is stereo 360. In order to make this happen we need simpler and smaller devices which should be portable for consumer use.
+
+Current stereo 360 video systems are used mainly designed for professional videography. They consist of several camera(18 in google’s jump VR) with bulky camera rig to support them. They record lot of data which will be offloaded and used to generate stereoscopic 360 videos. 
+
+This week, I started looking into literature on 360 degree systems. I found 3 works particularly interesting. In the first work “6-DOF VR Videos with a Single 360-Camera”, they use “structure from Motion” and video stabilization techniques to generate stereo 360 videos with 6DoF  from a monoscopic 360 capture device.  Other two works are from google and facebook respectively. Google’s work uses 16 cameras and facebook is trying to use just 4 cameras. Both of them provide different set of challenges. I am currently reading these two works and trying to figure out the direction for my thesis work. 
+------------------------------------------------------------
+The stitching pipeline optimization for quality have been published since last two decades. But  it is mostly on software and they are very general algorithms and doesn’t consider power budget for implementing 360 capture using a mobile device. The image capture pipeline is very simple and is not much scope for novelty as the single image frame stitching pipeline in hardware is straightforward. We need to think of smart ways to scale it for video stitching in 360, especially for making the videos spatio-temporal consistency between frames when the object lying on the boundary are moving across the fisheye images. 
+------------------------------
 Usecases \newline
 See the commit change 2
 Overview of paper \newline

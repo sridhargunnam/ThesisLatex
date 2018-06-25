@@ -65,7 +65,39 @@ Time for each Pyramid search(98\%) as shown in fig 3.1.
 	\end{center}
 	\vspace{-0.3in}
 \end{figure*} 
-	
+
+\subsection{Sensor Response Time}
+Camera startup time needs to be less. 
+	Initial frames are low contrast but improves over time. 
+	% May be regenerate these figures
+	%/media/gunman/Data/Programming/python_coding
+	\begin{figure*}
+		\begin{center}
+			\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/sensor0_low_contrast.jpg}
+			\caption{X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.}
+			\label{fig:ex_4_9}
+		\end{center}
+		\vspace{-0.3in}
+	\end{figure*} 
+
+	\begin{figure*}
+	\begin{center}
+		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equilization.jpg}
+		\caption{X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.}
+		\label{fig:ex_4_9}
+	\end{center}
+	\vspace{-0.3in}
+\end{figure*} 
+
+	\begin{figure*}
+	\begin{center}
+		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distribution.jpeg}
+		\caption{Xaxis shows the pyramid level and Y-axis the runtime tile search and propagate.}
+		\label{fig:ex_4_9}
+	\end{center}
+	\vspace{-0.3in}
+\end{figure*} 
+
 
 \section{Design Scalability}	
 
@@ -120,6 +152,13 @@ DRAM memory size\newline
 	\vspace{-0.3in}
 \end{figure*} 
 
+Static and Dynamic Power. Resourse Utilization. 
+Clock gating:
+We were able to do clock gating of pixel clock. It works fine. The next step is to select between multiple clocks and see how it affect the output image.
+
+Latency:
+By varying the latency of reconfiguration, the image is not stable. It shows horizontal and vertical bars of image. This has to be fixed in this week. 
+
 
 \section{Evaluating data-flow redundancies}
 Evaluating redundant computations in optical flow. 
@@ -155,6 +194,7 @@ The most used configuration for our project when all the six cameras are capturi
 
 	e) Quality Tradeoff's with input resolution\newline
 Sharpening
+Reduction in fidelity of unwarped image, as interpolation is not being done.
 Reducing number of pyramid's
 f) High motion Vs low motion differences. Size of motion vector to that of size of full frame. 
 g) File IO power

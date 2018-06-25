@@ -11,12 +11,14 @@ A level-1 auxiliary file: chapter6.aux
 A level-1 auxiliary file: chapter7.aux
 The style file: asudis.bst
 A level-1 auxiliary file: appendix1.aux
+A level-1 auxiliary file: appendix2.aux
+A level-1 auxiliary file: appendix3.aux
 A level-1 auxiliary file: vita.aux
 I found no \citation commands---while reading file dis.aux
 Database file #1: dis.bib
 You've used 0 entries,
             2456 wiz_defined-function locations,
-            657 strings with 5167 characters,
+            659 strings with 5193 characters,
 and the built_in function-call counts, 31 in all, are:
 = -- 0
 > -- 0

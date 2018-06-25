@@ -1,9 +1,14 @@
 Figure\nobreakspace {}\hfill Page \par 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{7}{figure.caption.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces CPU execution time of different compute stages. X axis has different sub-stages in optical flow and Y axis correspond to energy per frame.\relax }}{8}{figure.caption.3}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Power Efficiency of Camera ISP Stages in different configurations\relax }}{10}{figure.caption.5}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Framesize of I and P frames\relax }}{11}{figure.caption.6}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{18}{figure.caption.7}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Six fisheye images as captured by the IMX274 using Jetson TX2 board.\relax }}{19}{figure.caption.8}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Equirectangular Projection of first and second camera frames\relax }}{20}{figure.caption.9}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Optical flow inputs: Overlapping regions of adjacent camera images. Equirectangular Projection of first and second camera frames\relax }}{21}{figure.caption.10}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{10}{figure.caption.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{11}{figure.caption.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{12}{figure.caption.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Xaxis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{13}{figure.caption.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces CPU execution time of different compute stages. X axis has different sub-stages in optical flow and Y axis correspond to energy per frame.\relax }}{14}{figure.caption.6}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Power Efficiency of Camera ISP Stages in different configurations\relax }}{15}{figure.caption.8}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Framesize of I and P frames\relax }}{16}{figure.caption.9}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{24}{figure.caption.10}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{30}{figure.caption.11}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Six fisheye images as captured by the IMX274 using Jetson TX2 board.\relax }}{31}{figure.caption.12}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Equirectangular Projection of first and second camera frames\relax }}{32}{figure.caption.13}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Optical flow inputs: Overlapping regions of adjacent camera images. Equirectangular Projection of first and second camera frames\relax }}{33}{figure.caption.14}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Cubemap based Stitching, Path : /media/gunman/Data/fall-2017/research/mono360/equi2cubic\relax }}{34}{figure.caption.15}

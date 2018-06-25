@@ -1,26 +1,29 @@
 \nobreakspace {}\hfill Page\par 
-\contentsline {part}{LIST OF TABLES}{iv}{Doc-Start}
-\contentsline {part}{LIST OF FIGURES}{v}{Doc-Start}
+\contentsline {part}{LIST OF TABLES}{vi}{Doc-Start}
+\contentsline {part}{LIST OF FIGURES}{vii}{Doc-Start}
 CHAPTER \par 
 \contentsline {chapter}{\numberline {1}{\MakeUppercase {Introduction}}}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}{\MakeUppercase {Background}}}{3}{chapter.2}
-\contentsline {chapter}{\numberline {3}{\MakeUppercase {Characterization}}}{4}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}Intro}{4}{subsection.3.0.1}
-\contentsline {section}{\numberline {3.1}Prototype System Overview}{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}Energy and Latency Measurement Methodology}{5}{section.3.2}
-\contentsline {section}{\numberline {3.3}Energy Characterization}{6}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Individual stage energy}{6}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Characterization Results - Latency}{6}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Individual Stage latency}{6}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Optical flow runtime breakdown}{7}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Design Scalability}{7}{section.3.5}
-\contentsline {subsubsection}{Runtime scalability with the resolution}{7}{section*.2}
-\contentsline {subsubsection}{Resource scalability with the resolution}{8}{section*.4}
-\contentsline {section}{\numberline {3.6}Evaluating data-flow redundancies}{9}{section.3.6}
-\contentsline {section}{\numberline {3.7}Misc}{10}{section.3.7}
-\contentsline {chapter}{\numberline {4}{\MakeUppercase {Proposed mechanisms for energy and performance savings}}}{12}{chapter.4}
-\contentsline {chapter}{\numberline {5}{\MakeUppercase {Discussion}}}{15}{chapter.5}
-\contentsline {chapter}{\numberline {6}{\MakeUppercase {Conclusion and future work}}}{16}{chapter.6}
-\contentsline {part}{REFERENCES}{17}{chapter.6}
+\contentsline {chapter}{\numberline {2}{\MakeUppercase {Background}}}{4}{chapter.2}
+\contentsline {chapter}{\numberline {3}{\MakeUppercase {Characterization}}}{7}{chapter.3}
+\contentsline {subsection}{\numberline {3.0.1}Intro}{7}{subsection.3.0.1}
+\contentsline {section}{\numberline {3.1}Prototype System Overview}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Energy and Latency Measurement Methodology}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}Energy Characterization}{9}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Individual stage energy}{9}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Characterization Results - Latency}{9}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Individual Stage latency}{9}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Optical flow runtime breakdown}{10}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Sensor Response Time}{10}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Design Scalability}{10}{section.3.5}
+\contentsline {subsubsection}{Runtime scalability with the resolution}{10}{section*.5}
+\contentsline {subsubsection}{Resource scalability with the resolution}{11}{section*.7}
+\contentsline {section}{\numberline {3.6}Evaluating data-flow redundancies}{15}{section.3.6}
+\contentsline {section}{\numberline {3.7}Misc}{15}{section.3.7}
+\contentsline {chapter}{\numberline {4}{\MakeUppercase {Proposed mechanisms for energy and performance savings}}}{18}{chapter.4}
+\contentsline {chapter}{\numberline {5}{\MakeUppercase {Discussion}}}{26}{chapter.5}
+\contentsline {chapter}{\numberline {6}{\MakeUppercase {Conclusion and future work}}}{28}{chapter.6}
+\contentsline {part}{REFERENCES}{29}{chapter.6}
 APPENDIX \par 
-\contentsline {chapter}{\numberline {A}{\MakeUppercase {Raw Data}}}{18}{appendix.A}
+\contentsline {chapter}{\numberline {A}{\MakeUppercase {Raw Data}}}{30}{appendix.A}
+\contentsline {chapter}{\numberline {B}{\MakeUppercase {Making of the camera rig}}}{35}{appendix.B}
+\contentsline {chapter}{\numberline {C}{\MakeUppercase {Systems Architecture Survey}}}{36}{appendix.C}

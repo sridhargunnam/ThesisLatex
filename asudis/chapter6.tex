@@ -8,11 +8,43 @@ a) How to find out which data to sense, send without the intervention of computa
 b) How to detect them early in the vision pipeline
 c) Data Driven 
 
-
+--------------------------------------------------------
     New Image Compression Techniques:​
 
 Instead of approximating 3D object movements as 2D motion block translation, we need to model the 3D model rotations and translations in compression algorithms.
 
 Optical flow in spherical coordinates.
 	
+3) 
+Develop methods to perform computation on compressed data.
+
+
+4)
+On compression: 
+Evaluate different compression algorithms and compression rates and how they affect data transfer and performing computation on compressed data. We may need to invent/improve existing compression algorithms according to requirements of our application.
+5) 
+Dynamically perform region based compression. If region based compression is performed dynamically, we need architect the system to enable communication between stages to provide necessary compression information. (This might be use case in continuous vision sensing for surveillance application where the region of interest could be a moving object. We may want different compression rates based on region of interest.) 
+6)
+In region based compression, the following stages should be aware of which region is compressed and should accordingly​ perform computation in it. We should check for feasibility  to multiple compression ratios on the same image frame for different regions but still perform computations appropriately. 
+-----------------------------------------------------
+Some of the research challenges include:
+Making use of as less cameras as possible.
+Computation Vs Capture tradeoffs
+Need for novel computation methods to reduce design size and data transfer.
+Can we generate High resolution Stereoscopic capture using Low resolution monoscopic 360 video capture + low resolution Stereoscopic capture.
+Image representation for high compression, decompression and view transformation.
+Can we generate one equirectangular representation from another with simple transformations. 
+Where should this views be generated?
+Can we do some sort of encoding between the two views for highly correlated regions? (Assign ID to common regions, transmit only one of them)
+
+------------------------------
+Communication and Power Regulators
+Humans communication is adaptive to situations. We speak fastly/slowly, change languages, our protocols are adaptive i.e we interrupt others sometimes/ and don’t few other times. But the system interfaces are static and are not adaptive, they have fixed protocols and data rates. Can we get inspired from nature and make these interfaces more programmable and dynamically adapt to the requirements of the system?? What is stopping us?? 
+Where do such adaptive interfaces comes into picture?? We do have some sort of dynamic nature at interface hubs. But are they programmable?
+-------------------------------
+Optimizing number of cameras using software modelling in Unity/xyz using multiple virtual cameras. 
+Create virtual camera rig, set camera parameters of virtual camera and capture images [ Stanford Work]
+Stitch images captured by virtual camera 
+Compare with the ground truth, i.e the actual 3D environment 
+https://blogs.unity3d.com/2018/01/26/stereo-360-image-and-video-capture/
 
