@@ -1,29 +1,36 @@
 \nobreakspace {}\hfill Page\par 
-\contentsline {part}{LIST OF TABLES}{vi}{Doc-Start}
-\contentsline {part}{LIST OF FIGURES}{vii}{Doc-Start}
+\contentsline {part}{LIST OF TABLES}{iv}{Doc-Start}
+\contentsline {part}{LIST OF FIGURES}{v}{Doc-Start}
 CHAPTER \par 
 \contentsline {chapter}{\numberline {1}{\MakeUppercase {Introduction}}}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}{\MakeUppercase {Background}}}{4}{chapter.2}
-\contentsline {chapter}{\numberline {3}{\MakeUppercase {Characterization}}}{7}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}Intro}{7}{subsection.3.0.1}
-\contentsline {section}{\numberline {3.1}Prototype System Overview}{8}{section.3.1}
-\contentsline {section}{\numberline {3.2}Energy and Latency Measurement Methodology}{8}{section.3.2}
-\contentsline {section}{\numberline {3.3}Energy Characterization}{9}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Individual stage energy}{9}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Characterization Results - Latency}{9}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Individual Stage latency}{9}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Optical flow runtime breakdown}{10}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Sensor Response Time}{10}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Design Scalability}{10}{section.3.5}
-\contentsline {subsubsection}{Runtime scalability with the resolution}{10}{section*.5}
-\contentsline {subsubsection}{Resource scalability with the resolution}{11}{section*.7}
-\contentsline {section}{\numberline {3.6}Evaluating data-flow redundancies}{15}{section.3.6}
-\contentsline {section}{\numberline {3.7}Misc}{15}{section.3.7}
-\contentsline {chapter}{\numberline {4}{\MakeUppercase {Proposed mechanisms for energy and performance savings}}}{18}{chapter.4}
-\contentsline {chapter}{\numberline {5}{\MakeUppercase {Discussion}}}{26}{chapter.5}
-\contentsline {chapter}{\numberline {6}{\MakeUppercase {Conclusion and future work}}}{28}{chapter.6}
-\contentsline {part}{REFERENCES}{29}{chapter.6}
+\contentsline {chapter}{\numberline {3}{\MakeUppercase {System Overview and Data Flow}}}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Prototype System Overview}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Data Flow}{7}{section.3.2}
+\contentsline {chapter}{\numberline {4}{\MakeUppercase {Characterization}}}{10}{chapter.4}
+\contentsline {section}{\numberline {4.1}Measurement Methodology}{11}{section.4.1}
+\contentsline {section}{\numberline {4.2}Energy Characterization}{11}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Individual stage energy}{11}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Latency Characterization}{12}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Individual Stage latency}{12}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Optical flow runtime breakdown}{12}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Sensor Response Time}{13}{section.4.4}
+\contentsline {section}{\numberline {4.5}Design Scalability}{13}{section.4.5}
+\contentsline {subsubsection}{Runtime scalability with the resolution}{13}{section*.7}
+\contentsline {subsubsection}{Resource scalability with the resolution}{14}{section*.9}
+\contentsline {section}{\numberline {4.6}Evaluating data-flow redundancies}{17}{section.4.6}
+\contentsline {section}{\numberline {4.7}Misc}{18}{section.4.7}
+\contentsline {chapter}{\numberline {5}{\MakeUppercase {Proposed mechanisms}}}{20}{chapter.5}
+\contentsline {section}{\numberline {5.1}Stereaming feature detection and Correspondence}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2}High and Low Resolution combination}{26}{section.5.2}
+\contentsline {chapter}{\numberline {6}{\MakeUppercase {Discussion and Conclusion}}}{27}{chapter.6}
+\contentsline {section}{\numberline {6.1}Section1}{27}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Section2-future work}{29}{subsection.6.1.1}
+\contentsline {chapter}{\numberline {7}{\MakeUppercase {Research Questions}}}{30}{chapter.7}
+\contentsline {section}{\numberline {7.1}Data Abstraction and Data Representations}{31}{section.7.1}
+\contentsline {chapter}{\numberline {8}{\MakeUppercase {Conclusion}}}{32}{chapter.8}
+\contentsline {part}{REFERENCES}{33}{chapter.8}
 APPENDIX \par 
-\contentsline {chapter}{\numberline {A}{\MakeUppercase {Raw Data}}}{30}{appendix.A}
-\contentsline {chapter}{\numberline {B}{\MakeUppercase {Making of the camera rig}}}{35}{appendix.B}
-\contentsline {chapter}{\numberline {C}{\MakeUppercase {Systems Architecture Survey}}}{36}{appendix.C}
+\contentsline {chapter}{\numberline {A}{\MakeUppercase {ODS Stitching Images}}}{34}{appendix.A}
+\contentsline {chapter}{\numberline {A}{\MakeUppercase {Making of the camera rig}}}{38}{appendix.A}
+\contentsline {chapter}{\numberline {A}{\MakeUppercase {Systems Architecture Survey}}}{39}{appendix.A}

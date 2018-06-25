@@ -3,22 +3,29 @@
 \BOOKMARK [0][-]{chapter.1}{1 }{Doc-Start}% 3
 \BOOKMARK [0][-]{chapter.2}{2 }{Doc-Start}% 4
 \BOOKMARK [0][-]{chapter.3}{3 }{Doc-Start}% 5
-\BOOKMARK [1][-]{subsection.3.0.1}{3.0.1 Intro}{chapter.3}% 6
-\BOOKMARK [1][-]{section.3.1}{3.1 Prototype System Overview}{chapter.3}% 7
-\BOOKMARK [1][-]{section.3.2}{3.2 Energy and Latency Measurement Methodology}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.3}{3.3 Energy Characterization}{chapter.3}% 9
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Individual stage energy}{section.3.3}% 10
-\BOOKMARK [1][-]{section.3.4}{3.4 Characterization Results - Latency}{chapter.3}% 11
-\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Individual Stage latency}{section.3.4}% 12
-\BOOKMARK [2][-]{subsection.3.4.2}{3.4.2 Optical flow runtime breakdown}{section.3.4}% 13
-\BOOKMARK [2][-]{subsection.3.4.3}{3.4.3 Sensor Response Time}{section.3.4}% 14
-\BOOKMARK [1][-]{section.3.5}{3.5 Design Scalability}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.6}{3.6 Evaluating data-flow redundancies}{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.7}{3.7 Misc}{chapter.3}% 17
-\BOOKMARK [0][-]{chapter.4}{4 }{Doc-Start}% 18
+\BOOKMARK [1][-]{section.3.1}{3.1 Prototype System Overview}{chapter.3}% 6
+\BOOKMARK [1][-]{section.3.2}{3.2 Data Flow}{chapter.3}% 7
+\BOOKMARK [0][-]{chapter.4}{4 }{Doc-Start}% 8
+\BOOKMARK [1][-]{section.4.1}{4.1 Measurement Methodology}{chapter.4}% 9
+\BOOKMARK [1][-]{section.4.2}{4.2 Energy Characterization}{chapter.4}% 10
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Individual stage energy}{section.4.2}% 11
+\BOOKMARK [1][-]{section.4.3}{4.3 Latency Characterization}{chapter.4}% 12
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Individual Stage latency}{section.4.3}% 13
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Optical flow runtime breakdown}{section.4.3}% 14
+\BOOKMARK [1][-]{section.4.4}{4.4 Sensor Response Time}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.5}{4.5 Design Scalability}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.6}{4.6 Evaluating data-flow redundancies}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.7}{4.7 Misc}{chapter.4}% 18
 \BOOKMARK [0][-]{chapter.5}{5 }{Doc-Start}% 19
-\BOOKMARK [0][-]{chapter.6}{6 }{Doc-Start}% 20
-\BOOKMARK [-1][-]{chapter.6}{REFERENCES}{}% 21
-\BOOKMARK [0][-]{appendix.A}{A }{chapter.6}% 22
-\BOOKMARK [0][-]{appendix.B}{B }{chapter.6}% 23
-\BOOKMARK [0][-]{appendix.C}{C }{chapter.6}% 24
+\BOOKMARK [1][-]{section.5.1}{5.1 Stereaming feature detection and Correspondence}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.2}{5.2 High and Low Resolution combination}{chapter.5}% 21
+\BOOKMARK [0][-]{chapter.6}{6 }{Doc-Start}% 22
+\BOOKMARK [1][-]{section.6.1}{6.1 Section1}{chapter.6}% 23
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 Section2-future work}{section.6.1}% 24
+\BOOKMARK [0][-]{chapter.7}{7 }{Doc-Start}% 25
+\BOOKMARK [1][-]{section.7.1}{7.1 Data Abstraction and Data Representations}{chapter.7}% 26
+\BOOKMARK [0][-]{chapter.8}{8 }{Doc-Start}% 27
+\BOOKMARK [-1][-]{chapter.8}{REFERENCES}{}% 28
+\BOOKMARK [0][-]{appendix.A}{A }{chapter.8}% 29
+\BOOKMARK [0][-]{appendix.A}{A }{chapter.8}% 30
+\BOOKMARK [0][-]{appendix.A}{A }{chapter.8}% 31

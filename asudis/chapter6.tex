@@ -1,4 +1,5 @@
-\chapter{Discussion}
+\chapter{Discussion and Conclusion}
+\section{Section1}
 Summarizing the proposed optimizations and future directions.
 DRAM-less
 Stacked Image Sensors
@@ -48,3 +49,57 @@ Stitch images captured by virtual camera
 Compare with the ground truth, i.e the actual 3D environment 
 https://blogs.unity3d.com/2018/01/26/stereo-360-image-and-video-capture/
 
+\subsection{Section2-future work}
+
+
+Future Work:
+Divide it into:
+Hardware/Software and New Technology
+
+Sub categories of different domains and fields. 
+Eg: Vision, Graphics, ML, Systems, Networking etc
+Graphics: Model generation 
+Vision: 
+Systems: Light Field Cameras
+
+Challenges in immersive 360 degree capture for natural environments:
+Reflective challenges in 360 camera capture. Different cameras see different reflections, will the math still be the same. It won’t be, because we have not considered illumination. 
+
+Filling the holes using AI
+
+Image representations
+
+Viewpoint aware static and dynamic scene recognition
+Integration of codecs 
+Near sensor ADC
+Motivation for SAR or hybrid SAR to single slope ADC( state of the ART)
+Reducing computation 
+
+\chapter{Research Questions}
+
+
+1)  Data Flow: Reducing redundant computation and transfer.\newline
+Cause $\Rightarrow$ Effect  \newline
+Cause:\newline
+Temporal frame re-reference(reuse) for motion vector calculation.\newline
+Previous optical flow re-reference for temporal regularization of current optical flow.\newline
+Effect: \newline
+Increased DRAM memory consumption \newline
+Increased Memory Bandwidth \newline
+Increased end-to-end pipeline latency \newline
+Cause: \newline
+Re-computation of entire flow pyramids for each frame. (Pyramids of previous flow, estimated flow on current frame, current gray image, and alpha channel, all in floating point)\newline
+Effect:\newline
+Increasing the number of computations needed for each frame. \newline
+(Differentiating between the background and foreground and motion vector inputs to reduce the computations. background information is available in the form of optical flow correspondence, motion vectors are available from the ISP/motion estimation block)\newline
+
+2)  Data abstractions and formats?
+When and where should we find motion vectors?
+How much is size of local buffers at each stage? Make analytical producer consumer model?
+How much energy saving at ADC readout?
+How much savings because of DRAM organization? and bit quantization?
+
+\section{Data Abstraction and Data Representations}
+Equirectangular format stretches the region near poles thereby storing redundant data. It is also difficult to compress as the existing motion estimation for video compression[facebook] doesn’t work on equirectangular format. Cubemap on the other hand reduces the storage of redundant information at the poles. It also helps in compression as we can use existing compression techniques. There is also a trend for equi-angular cubemaps which reduce the file size even further by mapping the spherical images onto smaller cubes.\newline
+
+Which is better format to represent 360 videos monoscopic videos? Equirectangular or cubemap or new formats which can represent spherical images that reduce both data storage and rendering effort? As these formats keep changing, we need design systems that are independent of the type of projection format. \newline

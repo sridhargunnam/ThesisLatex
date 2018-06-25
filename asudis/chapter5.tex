@@ -1,4 +1,4 @@
-\chapter{Proposed mechanisms for energy and performance savings}
+\chapter{Proposed mechanisms} % for energy and performance savings
 
 	Technique $\Rightarrow$ Benefits  \newline
 
@@ -96,7 +96,8 @@ We propose two key research goals: (i) Establish an efficient RAM-less streaming
 architecture to direct fisheye sensor data into equirectangular output; and (ii) Study the effects
 of early in-sensor compression to reduce the transmission of data across sensor interfaces.  \newline
 
-STREAMING FEATURE DETECTION AND CORRESPONDENCE
+\section{Stereaming feature detection and Correspondence}
+
 We propose an architecture for feature detection and correspondence that makes effective use of spatial locality towards pixel buffers and divide-and- conquer strategies, allowing an independence from random-access memory. We expect that features detection and correspondence operations can be derived from standard corner-based algorithms, but propose to study novel hardware designs for area-efficiency and energy-efficiency. \newline
 
 To further reduce the energy consumption of the system architecture proposed in Thrust 1, we target the image sensor physical interface as a bottleneck to energy efficiency. As temperature requirements force a substantial distance between image sensors and processing units, sensor data transactions are notoriously energy-expensive. At full input resolution of 15 MP at 30 frames per second, using a typical Low-Voltage Differential Signaling (LVDS) physical interface consumes 2W to satisfy the \&gt;3 Gbps bandwidth, e.g., [8]. This is prohibitively high, and the Gear 360 typically is constrained to capture video at one half of this available resolution, while still consuming multiple watts of average power consumption. We explore the use of in-sensor compression to assist in an energy reduction, as compared in Table 1. Existing hardware solutions for JPEG and MPEG compression are plentiful and sufficient, dropping data \newline
@@ -104,7 +105,7 @@ bitrates by substantial compression ratios (e.g., 8:1, 23:1, 46:1, etc.) and som
 ----------------------------------------------------
 
 
-8) High and Low Resolution combination
+\section{High and Low Resolution combination}
 What are the regions of the image frame that are needed in high resolution in order to generate a high resolution output ODS video. 
 \begin{figure*}
 	\begin{center}
@@ -114,10 +115,8 @@ What are the regions of the image frame that are needed in high resolution in or
 	\end{center}
 	\vspace{-0.3in}
 \end{figure*} 
-9) Data Abstraction and Data Representations
-Equirectangular format stretches the region near poles thereby storing redundant data. It is also difficult to compress as the existing motion estimation for video compression[facebook] doesn’t work on equirectangular format. Cubemap on the other hand reduces the storage of redundant information at the poles. It also helps in compression as we can use existing compression techniques. There is also a trend for equi-angular cubemaps which reduce the file size even further by mapping the spherical images onto smaller cubes.\newline
 
-Which is better format to represent 360 videos monoscopic videos? Equirectangular or cubemap or new formats which can represent spherical images that reduce both data storage and rendering effort? As these formats keep changing, we need design systems that are independent of the type of projection format. \newline
+
 
 
 
