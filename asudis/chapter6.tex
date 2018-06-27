@@ -1,4 +1,5 @@
-\chapter{Discussion and Conclusion}
+\chapter{Discussion and Conslusion}
+Intro 
 \section{Section1}
 Summarizing the proposed optimizations and future directions.
 DRAM-less
@@ -40,7 +41,7 @@ Can we do some sort of encoding between the two views for highly correlated regi
 
 ------------------------------
 Communication and Power Regulators
-Humans communication is adaptive to situations. We speak fastly/slowly, change languages, our protocols are adaptive i.e we interrupt others sometimes/ and don’t few other times. But the system interfaces are static and are not adaptive, they have fixed protocols and data rates. Can we get inspired from nature and make these interfaces more programmable and dynamically adapt to the requirements of the system?? What is stopping us?? 
+Humans communication is adaptive to situations. We speak fastly/slowly, change languages, our protocols are adaptive i.e we interrupt others sometimes/ and don't few other times. But the system interfaces are static and are not adaptive, they have fixed protocols and data rates. Can we get inspired from nature and make these interfaces more programmable and dynamically adapt to the requirements of the system?? What is stopping us?? 
 Where do such adaptive interfaces comes into picture?? We do have some sort of dynamic nature at interface hubs. But are they programmable?
 -------------------------------
 Optimizing number of cameras using software modelling in Unity/xyz using multiple virtual cameras. 
@@ -49,7 +50,7 @@ Stitch images captured by virtual camera
 Compare with the ground truth, i.e the actual 3D environment 
 https://blogs.unity3d.com/2018/01/26/stereo-360-image-and-video-capture/
 
-\subsection{Section2-future work}
+\subsection{future work}
 
 
 Future Work:
@@ -63,7 +64,7 @@ Vision:
 Systems: Light Field Cameras
 
 Challenges in immersive 360 degree capture for natural environments:
-Reflective challenges in 360 camera capture. Different cameras see different reflections, will the math still be the same. It won’t be, because we have not considered illumination. 
+Reflective challenges in 360 camera capture. Different cameras see different reflections, will the math still be the same. It won't be, because we have not considered illumination. 
 
 Filling the holes using AI
 
@@ -75,7 +76,7 @@ Near sensor ADC
 Motivation for SAR or hybrid SAR to single slope ADC( state of the ART)
 Reducing computation 
 
-\chapter{Research Questions}
+\subsection{Research Questions}
 
 
 1)  Data Flow: Reducing redundant computation and transfer.\newline
@@ -99,7 +100,12 @@ How much is size of local buffers at each stage? Make analytical producer consum
 How much energy saving at ADC readout?
 How much savings because of DRAM organization? and bit quantization?
 
-\section{Data Abstraction and Data Representations}
-Equirectangular format stretches the region near poles thereby storing redundant data. It is also difficult to compress as the existing motion estimation for video compression[facebook] doesn’t work on equirectangular format. Cubemap on the other hand reduces the storage of redundant information at the poles. It also helps in compression as we can use existing compression techniques. There is also a trend for equi-angular cubemaps which reduce the file size even further by mapping the spherical images onto smaller cubes.\newline
+\subsubsection{Data Abstraction and Data Representations}
+Equirectangular format stretches the region near poles thereby storing redundant data. It is also difficult to compress as the existing motion estimation for video compression[facebook] doesn't work on equirectangular format. Cubemap on the other hand reduces the storage of redundant information at the poles. It also helps in compression as we can use existing compression techniques. There is also a trend for equi-angular cubemaps which reduce the file size even further by mapping the spherical images onto smaller cubes.\newline
 
 Which is better format to represent 360 videos monoscopic videos? Equirectangular or cubemap or new formats which can represent spherical images that reduce both data storage and rendering effort? As these formats keep changing, we need design systems that are independent of the type of projection format. \newline
+
+\section{Conclusion}
+
+Characterization summary
+Combination of feature based and dense correspondence based optical flow. 

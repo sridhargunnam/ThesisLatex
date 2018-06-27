@@ -45,28 +45,29 @@ For camera system and ISP stages the latency is taken from NVIDIA camera API doc
 
 \subsection{Optical flow runtime breakdown}
 Time for each Pyramid search(98\%) as shown in fig 3.1.
-\begin{figure*}
+\begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/pyramid_runtime.png}
 		\caption{X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.}
 		\label{fig:ex_4_9}
 	\end{center}
 	\vspace{-0.3in}
-\end{figure*} 
+\end{figure} 
 
 \section{Sensor Response Time}
+Making case for hardware controller to perform camera configuration. 
 Camera startup time needs to be less. 
 	Initial frames are low contrast but improves over time. 
 	% May be regenerate these figures
 	%/media/gunman/Data/Programming/python_coding
-	\begin{figure*}
+	\begin{figure}[h]
 		\begin{center}
 			\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/sensor0_low_contrast.jpg}
 			\caption{X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.}
 			\label{fig:ex_4_9}
 		\end{center}
 		\vspace{-0.3in}
-	\end{figure*} 
+	\end{figure}[h]
 
 	\begin{figure*}
 	\begin{center}

@@ -1,10 +1,28 @@
 \chapter{Making of the camera rig}
 
-Camera Calibration Process
-OCamCalib
+Camera Calibration Process.
+Designing the supporting base.
+%Helmet prototype discussion.
+%OCamCalib
 %https://www.mathworks.com/help/vision/ug/fisheye-calibration-basics.html?s_tid=gn_loc_drop
 
 %https://medium.com/@kennethjiang/calibrate-fisheye-lens-using-opencv-333b05afa0b0
 %https://medium.com/@kennethjiang/calibrate-fisheye-lens-using-opencv-333b05afa0b0
 
 
+
+Usecases \newline
+Capturing immersive real world scenes for experiencing in AR/VR. 
+Why we need small form factor/ low power?
+
+Mobile 360 capture, AR, VR, MR, Autonomous Driving. \newline
+
+Usecase1: 360 stereo capture for experiencing in VR headsets. 
+[xx1] Sports live stream (only few powerful ones are sufficient)
+For general purpose capture and streaming, we need portable and long capture time capable. Existing VR cameras are available in small and large form factors but they have limited live streaming capabilities and don't have good battery life(60 minutes max). 
+% This is mostly because they use off the shelf camera devices, and ISP's and general purpose computing like CPU, GPU in the processing pipeline. We believe that optimizing the algorithms and systems by taking the inherent qualities of video compression can remove the data access and computation redundancies. 
+
+Usecase2: In Mixed reality headsets(military training, gaming, etc) we capture and overlay virtual objects and display. So latency critical stitching. 
+%  (check examples 2 :https://en.wikipedia.org/wiki/Mixed_reality), 
+
+Usecase3: Hybrid, 360 monoscopic and stereoscopic capture and display.
