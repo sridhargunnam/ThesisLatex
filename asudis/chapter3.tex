@@ -16,12 +16,14 @@ The end to end system consist of four main stages viz., image sensor, image sign
 	\end{center}
 	\vspace{-0.3in}
 \end{figure} 
-Fisheye lenses allow image sensors to capture images within an ultra-wide hemispheric field of view. With two fisheye-lensed sensors that capture complementary fields of view each of over 180º, the pair of captured images can be processed to achieve over a spherical 360ºx180º area, as shown in Figure 2. The equirectangular projection format is a common format for 360ºx180º images, allowing remapping to other projections for convenient viewing. To create equirectangular images, the paired fisheye capture data undergoes multiple stages:
+
+
+Fisheye lenses allow image sensors to capture images within an ultra-wide hemispheric field of view. With two fisheye-lensed sensors that capture complementary fields of view each of over 180 \textdegree  , the pair of captured images can be processed to achieve over a spherical 360 \textdegree  x 180 \textdegree   area, as shown in Figure 2. The equirectangular projection format is a common format for 360 \textdegree  x180 \textdegree   images, allowing remapping to other projections for convenient viewing. To create equirectangular images, the paired fisheye capture data undergoes multiple stages:
 1) Projection Mapping: The equirectangular image is populated by sourcing image pixels from the fisheye images along a (spherical coordinate → polar coordinate) projection map. As projected pixel coordinates typically fall between integer pixel coordinates, the algorithm typically either pulls a nearest-neighbor pixel or a bilinear combination of a neighborhood of pixels. 
 2) Correspondence:  As the two fisheye cameras do not precisely occupy the same point in space, objects at the edges of fisheye images appear in different positions in the images, dependent on their distances from the camera. This phenomenon is called the parallax effect. To ensure that objects appear properly, a correspondence algorithm identifies matching visual features across image pairs, warping the projection to reduce object seams in the image.
-3) Blending: Even after projection and correspondence suggest image overlay coordinates, intensity variations from misalignments still occur between the two projected images at the stitching boundary. The blending stage combines the images through a weighted sum of pixel values to generate a seamless 360º image with a smooth transition.	
+3) Blending: Even after projection and correspondence suggest image overlay coordinates, intensity variations from misalignments still occur between the two projected images at the stitching boundary. The blending stage combines the images through a weighted sum of pixel values to generate a seamless 360 \text degree   image with a smooth transition.	
 4) Compression: To reduce the bandwidth at the capture, networking, or storage interface, images can be compressed into representations that use smaller file sizes. Lossy compression schemes, e.g., JPEG/MPEG, allow dramatic reductions in file size by discarding information that is considered to be perceptibly irrelevant.
-\subsection{Hardware}
+\subsubsection{Hardware}
 Hardware: Dual Fisheye Camera \newline
 Monoscopic Stages:
 The stages may include Intensity compensation, fisheye unwarping, alignment, blending. 
@@ -47,6 +49,26 @@ The stages may include Intensity compensation, fisheye unwarping, alignment, ble
 	\end{center}
 	\vspace{-0.3in}
 \end{figure} 
+
+\begin{figure*}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/EqRect_offset_fov_viz_loop v3.jpg}
+		%\includegraphics[width=1.1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/EqRect_2_adj_images.jpg}
+		\caption{Equirectangular Projection of first and second camera frames}
+		\label{ODS_Input_Ouput}
+	\end{center}
+	\vspace{-0.3in}
+\end{figure*} 
+
+The overlapping left and right images.
+\begin{figure*}
+	\begin{center}
+		\includegraphics[width=1.1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/OF_inp_overlap_region_of_adj_cam.jpg}
+		\caption{Optical flow inputs: Overlapping regions of adjacent camera images. Equirectangular Projection of first and second camera frames}
+		\label{ODS_Input_Ouput}
+	\end{center}
+	\vspace{-0.3in}
+\end{figure*} 
 
 Hardware:Six Camera Rig.
 For our prototype camera design we use six IMX-274 cameras for capture and Nvidia Jetson TX2 for stitching. The Camera and Jetson specs are shown in figure 3.2. \newline 

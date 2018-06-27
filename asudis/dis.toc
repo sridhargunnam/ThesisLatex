@@ -11,34 +11,34 @@ CHAPTER \par
 \contentsline {section}{\numberline {2.3}Related Work:}{7}{section.2.3}
 \contentsline {chapter}{\numberline {3}{\MakeUppercase {Data Flow}}}{8}{chapter.3}
 \contentsline {section}{\numberline {3.1}Monoscopic 360 }{8}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Hardware}{10}{subsection.3.1.1}
+\contentsline {subsubsection}{Hardware}{10}{section*.5}
 \contentsline {section}{\numberline {3.2}Omni-directional Stereo System}{10}{section.3.2}
 \contentsline {section}{\numberline {3.3}Challenges with existing systems}{12}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Energy}{12}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Latency}{13}{subsection.3.3.2}
-\contentsline {chapter}{\numberline {4}{\MakeUppercase {Characterization}}}{14}{chapter.4}
+\contentsline {chapter}{\numberline {4}{\MakeUppercase {Characterization}}}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Measurement Methodology}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Energy Characterization}{15}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Individual stage energy}{15}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.2}Energy Characterization}{16}{section.4.2}
+\contentsline {subsubsection}{Individual stage energy}{16}{section*.12}
 \contentsline {section}{\numberline {4.3}Latency Characterization}{16}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Individual Stage latency}{16}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Optical flow runtime breakdown}{16}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.1}Individual Stage latency}{17}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Optical flow runtime breakdown}{17}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}Sensor Response Time}{17}{section.4.4}
-\contentsline {section}{\numberline {4.5}Design Scalability}{17}{section.4.5}
-\contentsline {subsubsection}{Runtime scalability with the resolution}{17}{section*.13}
-\contentsline {subsubsection}{Resource scalability with the resolution}{18}{section*.15}
-\contentsline {section}{\numberline {4.6}Evaluating data-flow redundancies}{21}{section.4.6}
-\contentsline {section}{\numberline {4.7}Misc}{22}{section.4.7}
-\contentsline {chapter}{\numberline {5}{\MakeUppercase {Proposed mechanisms}}}{24}{chapter.5}
-\contentsline {section}{\numberline {5.1}Stereaming feature detection and Correspondence}{29}{section.5.1}
-\contentsline {section}{\numberline {5.2}High and Low Resolution combination}{31}{section.5.2}
-\contentsline {chapter}{\numberline {6}{\MakeUppercase {Discussion and Conslusion}}}{33}{chapter.6}
-\contentsline {section}{\numberline {6.1}Section1}{33}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}future work}{35}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Research Questions}{35}{subsection.6.1.2}
-\contentsline {subsubsection}{Data Abstraction and Data Representations}{36}{section*.19}
-\contentsline {section}{\numberline {6.2}Conclusion}{37}{section.6.2}
-\contentsline {part}{REFERENCES}{38}{section.6.2}
+\contentsline {section}{\numberline {4.5}Design Scalability}{18}{section.4.5}
+\contentsline {subsubsection}{Runtime scalability with the resolution}{18}{section*.17}
+\contentsline {subsubsection}{Resource scalability with the resolution}{19}{section*.19}
+\contentsline {section}{\numberline {4.6}Evaluating data-flow redundancies}{22}{section.4.6}
+\contentsline {section}{\numberline {4.7}Misc}{23}{section.4.7}
+\contentsline {chapter}{\numberline {5}{\MakeUppercase {Proposed mechanisms}}}{25}{chapter.5}
+\contentsline {section}{\numberline {5.1}Stereaming feature detection and Correspondence}{30}{section.5.1}
+\contentsline {section}{\numberline {5.2}High and Low Resolution combination}{32}{section.5.2}
+\contentsline {chapter}{\numberline {6}{\MakeUppercase {Discussion and Conslusion}}}{34}{chapter.6}
+\contentsline {section}{\numberline {6.1}Section1}{34}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}future work}{36}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Research Questions}{36}{subsection.6.1.2}
+\contentsline {subsubsection}{Data Abstraction and Data Representations}{37}{section*.23}
+\contentsline {section}{\numberline {6.2}Conclusion}{38}{section.6.2}
+\contentsline {part}{REFERENCES}{39}{section.6.2}
 APPENDIX \par 
-\contentsline {chapter}{\numberline {A}{\MakeUppercase {ODS Stitching Images}}}{39}{appendix.A}
-\contentsline {chapter}{\numberline {A}{\MakeUppercase {Making of the camera rig}}}{43}{appendix.A}
+\contentsline {chapter}{\numberline {A}{\MakeUppercase {ODS Stitching Images}}}{40}{appendix.A}
+\contentsline {chapter}{\numberline {A}{\MakeUppercase {Making of the camera rig}}}{42}{appendix.A}

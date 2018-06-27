@@ -1,10 +1,8 @@
 \chapter{Characterization}
 
-Our work focuses on characterizing the energy and latency of end-to-end Omni-directional(OD) Camera  systems. The goal is to find the bottlenecks of different components in the hardware and software pipeline and propose optimizations. As the existing OD camera systems are built from off the shelf camera devices and uses the conventional stitching algorithms we see a potential research opportunity to close gaps between hardware and software. Many existing systems like Google Jump, Facebook Surround capture and compute on enormous amount of data consuming several hundreds of watts of power to stitch images in realtime 30fps. The main challenge in OD panorama generation is to understand the data flow across the system and to make decisions on data abstractions needed at different subcomponents to reduce the total system power.
+The goal of the work is to characterize the energy and latency of end-to-end Omni-directional(OD) Camera  systems both in the hardware and software pipeline and propose optimizations. As the existing OD camera systems are built from off the shelf camera devices and uses the conventional stitching algorithms, they capture, transfer redundant data and perform redundant computations. The redundancy can be attributed to the sptio-temporal correlation between the frames. The main challenge in OD panorama generation is to understand the data flow across the system and to make decisions on data abstractions needed at different subcomponents to reduce the total system power.
 
-Many have argued [Edvardo Hotmobile, Nvidia, AMD] that we need resolutions greater than 16k and frame-rate greater of 240 for true immersion in VR. At such higher framerate and resolutions there is lot of information that is redundantly captured, processed and transferred. Therefore, in our work, we study how the energy and latency of each stage get affected by the output resolution and the characterize the bottlenecks in greater detail. 
-
-We characterize both monoscopic and ODS camera systems. The difference between them is the number of novel views needed is significantly higher for ODS. Monoscopic is a special case of ODS and at core involves the same optical flow based stitching. So we will characterize generalized flow based stitching system and notify any important differences between monoscopic and ODS when necessary.\newline
+We characterize both monoscopic and ODS camera systems. The difference between them is the number of novel views needed is significantly higher for ODS compared to monoscopic. Both the systems at core use optical flow based stitching, so we will characterize generalized flow based stitching system and notify any important differences between monoscopic and ODS when necessary.\newline
 
 
 \section{Measurement Methodology} % Energy and Latency Measurement 
@@ -19,14 +17,14 @@ Application run time measurement.
 
 
 \section{Energy Characterization}
-\subsection{Individual stage energy}
+\subsubsection{Individual stage energy}
 	\begin{tabular}{c|c|c|c}
 	Power Rail & Diff. Current(mA) & Voltage(mV) & Energy ( mJ/frame) \\
-	Camera & 375.4 & 3336 & 41.7 \\
-	ISP+CODEC & 102.7 & 19152 & 65.6 \\
-	CPU & 16.4 & 19144 & 10.5 \\
-	DDR & 260.4 & 4792 & 41.6 \\
-	Stitch[CPU] & [] & [] & [] \\
+	Sony IMX-274 (Camera) & 375.4 & 3336 & 41.7 \\
+	ISP+CODEC (TX2) & 102.7 & 19152 & 65.6 \\
+	ARM-A57(Camera Cntrl.) & 16.4 & 19144 & 10.5 \\
+	DRAM (8 GB LPDDR4)  & 260.4 & 4792 & 41.6 \\
+	Quad ARM-A57(Stitching) & [] & [] & [] \\
 	\end{tabular} \newline \newline
 	The camera system is configured to 1920x1080 resolution at 30 fps for the below measurements. [make absolute energies instead of diff. i.e active -idle]\newline
 	
