@@ -20,25 +20,26 @@ CHAPTER \par
 \contentsline {section}{\numberline {4.1}Measurement Methodology}{15}{section.4.1}
 \contentsline {section}{\numberline {4.2}Energy Characterization}{16}{section.4.2}
 \contentsline {subsubsection}{Individual stage energy}{16}{section*.12}
-\contentsline {section}{\numberline {4.3}Latency Characterization}{16}{section.4.3}
+\contentsline {section}{\numberline {4.3}Latency Characterization}{17}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Individual Stage latency}{17}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Optical flow runtime breakdown}{17}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Sensor Response Time}{17}{section.4.4}
-\contentsline {section}{\numberline {4.5}Design Scalability}{18}{section.4.5}
-\contentsline {subsubsection}{Runtime scalability with the resolution}{18}{section*.17}
-\contentsline {subsubsection}{Resource scalability with the resolution}{19}{section*.19}
+\contentsline {subsection}{\numberline {4.3.2}Optical flow runtime breakdown}{18}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Camera Sensor Configuration}{18}{section.4.4}
+\contentsline {subsubsection}{Sensor Response Time}{18}{section*.15}
+\contentsline {section}{\numberline {4.5}Design Scalability}{20}{section.4.5}
+\contentsline {subsubsection}{Runtime scalability with the resolution}{20}{section*.18}
+\contentsline {subsubsection}{Resource scalability with the resolution}{21}{section*.20}
 \contentsline {section}{\numberline {4.6}Evaluating data-flow redundancies}{22}{section.4.6}
 \contentsline {section}{\numberline {4.7}Misc}{23}{section.4.7}
-\contentsline {chapter}{\numberline {5}{\MakeUppercase {Proposed mechanisms}}}{25}{chapter.5}
-\contentsline {section}{\numberline {5.1}Stereaming feature detection and Correspondence}{30}{section.5.1}
-\contentsline {section}{\numberline {5.2}High and Low Resolution combination}{32}{section.5.2}
-\contentsline {chapter}{\numberline {6}{\MakeUppercase {Discussion and Conslusion}}}{34}{chapter.6}
-\contentsline {section}{\numberline {6.1}Section1}{34}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}future work}{36}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Research Questions}{36}{subsection.6.1.2}
-\contentsline {subsubsection}{Data Abstraction and Data Representations}{37}{section*.23}
-\contentsline {section}{\numberline {6.2}Conclusion}{38}{section.6.2}
-\contentsline {part}{REFERENCES}{39}{section.6.2}
+\contentsline {chapter}{\numberline {5}{\MakeUppercase {Proposed mechanisms}}}{26}{chapter.5}
+\contentsline {section}{\numberline {5.1}Stereaming feature detection and Correspondence}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}High and Low Resolution combination}{33}{section.5.2}
+\contentsline {chapter}{\numberline {6}{\MakeUppercase {Discussion and Conslusion}}}{35}{chapter.6}
+\contentsline {section}{\numberline {6.1}Section1}{35}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}future work}{37}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Research Questions}{37}{subsection.6.1.2}
+\contentsline {subsubsection}{Data Abstraction and Data Representations}{38}{section*.24}
+\contentsline {section}{\numberline {6.2}Conclusion}{39}{section.6.2}
+\contentsline {part}{REFERENCES}{40}{section.6.2}
 APPENDIX \par 
-\contentsline {chapter}{\numberline {A}{\MakeUppercase {ODS Stitching Images}}}{40}{appendix.A}
-\contentsline {chapter}{\numberline {A}{\MakeUppercase {Making of the camera rig}}}{42}{appendix.A}
+\contentsline {chapter}{\numberline {A}{\MakeUppercase {ODS Stitching Images}}}{41}{appendix.A}
+\contentsline {chapter}{\numberline {A}{\MakeUppercase {Making of the camera rig}}}{43}{appendix.A}

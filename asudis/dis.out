@@ -19,7 +19,7 @@
 \BOOKMARK [1][-]{section.4.3}{4.3 Latency Characterization}{chapter.4}% 19
 \BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Individual Stage latency}{section.4.3}% 20
 \BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Optical flow runtime breakdown}{section.4.3}% 21
-\BOOKMARK [1][-]{section.4.4}{4.4 Sensor Response Time}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.4}{4.4 Camera Sensor Configuration}{chapter.4}% 22
 \BOOKMARK [1][-]{section.4.5}{4.5 Design Scalability}{chapter.4}% 23
 \BOOKMARK [1][-]{section.4.6}{4.6 Evaluating data-flow redundancies}{chapter.4}% 24
 \BOOKMARK [1][-]{section.4.7}{4.7 Misc}{chapter.4}% 25
