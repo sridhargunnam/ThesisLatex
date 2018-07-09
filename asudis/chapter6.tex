@@ -1,7 +1,22 @@
-\chapter{Discussion and Conslusion}
-Intro 
-\section{Section1}
-Summarizing the proposed optimizations and future directions.
+\chapter{Discussion and Conclusion}
+
+Based on the characterization of end-to-end system pipeline we can group the proposed optimizations into two categories, i.e to optimize for low power and another for low latency. For low power we talk about techniques to reduce sensor power and then about spatio-temporal data reuse during computation. For reducing the compute latency we talk about use of pipelining and parallelism and the expected benefits. 
+
+\subsection{Techniques for Low Power}
+
+\subsubsection{Reducing the ADC Power}
+In a multi-camera system, the combined power of sensors becomes a critical bottlenecks. Most typical image sensors are not intelligent to compute over the only the changing pixels. The temporal frames have high amount of redundancy, when there is less motion of camera and/or the objects in the scene. Therefore it is possible to have different modes of camera operation through which we can save power. The different modes could be reducing the resolution and frame-rates, which are explored in previous works[jinhan]. In addition to such optimizations, we propose the adaptability of camera's ADC circuitry to save power even further. 
+
+A camera capturing 4k, 30fps typically consumes ~500mW of power, and the ADC contributes to ~60\% of total sensor power. We observed the dynamic range is smaller for local regions which in frame, i.e the pixels will have same most significant bits(msb) and only vary for the least significant bits(lsb). This information can be used to reduce the number of ADC conversion cycles in a SAR like ADC's. The conversions can only start for the last few bits thereby reducing ADC conversion cycles by more than 50\%. It should also be noted that the voltage swings for resolving msb bits is higher than the lsb bits. Therefore there is extra savings in terms of reducing the voltage swing. But when the predicted starting point of ADC conversion goes wrong, the conversion should start for msb bit. 
+
+\subsubsection{Reducing Camera Serial Interface Power}
+The sensor interface power consumes about 17\% of total system power during capture. Currently the interfaces stream the raw camera data to ISP. But this power can also be reduced by using light weight compression techniques and encoding using Huffman encoding. But in order to be able to use Huffman encoding, we need the entropy data. As recent ISP's have a bayer statistics accelerator embedded, we can easily generate the approximate entropy of frame for various regions. Such co-design techniques should drastically reduce the interface power and even enhance the effective number of pixels transmitted for a given channel bandwidth. 
+
+Real world content generation for VR is an emerging research problem. VR content needs capturing for 360 degree view and 3D immersive experience. Although commercial solutions exist, the dataflow is broken resulting to long latencies. The workflow consist of camera that captures the multiple views and offload the computing to desktop or cloud for stitching the video. These solutions needs several 1000's of CPU's if not multiple GPU's consuming consuming upto 1 kilo Watt power to stitch a 4k video in realtime. Cloud based solutions will have privacy concerns considering the user may share personal content in VR in real-time We envision that capturing and rendering near camera helps improving the end-to-end latency and reduce the power by close integration of the capture and rendering system. The existing 360 camera devices have portable camera rigs that capture and offload the expensive computation to cloud, or powerful desktops. This limits the scalability of stitching operation  and increases the end-to-end latency. But performing capture and generating the VR panorama on the same device is computationally expensive. 	Our work focuses on characterizing the energy and latency of end-to-end Omni-directional(OD) Camera  systems. The goal is to find the bottlenecks of different components in the hardware and software pipeline and propose optimizations.
+Capturing consumes 24fps/Watt at 4k resolution whereas computing has efficiency of 0.01fps/Watt on a quad core ARM-A57.
+%Intro 
+%\section{Section1}
+%Summarizing the proposed optimizations and future directions.
 DRAM-less
 Stacked Image Sensors
 ADC readout power, Rolling vs global shutter
@@ -10,8 +25,10 @@ a) How to find out which data to sense, send without the intervention of computa
 b) How to detect them early in the vision pipeline
 c) Data Driven 
 
---------------------------------------------------------
-    New Image Compression Techniques:​
+
+%\section{Research questions}
+
+%\subsection{New Image Compression Techniques
 
 Instead of approximating 3D object movements as 2D motion block translation, we need to model the 3D model rotations and translations in compression algorithms.
 
@@ -28,7 +45,7 @@ Evaluate different compression algorithms and compression rates and how they aff
 Dynamically perform region based compression. If region based compression is performed dynamically, we need architect the system to enable communication between stages to provide necessary compression information. (This might be use case in continuous vision sensing for surveillance application where the region of interest could be a moving object. We may want different compression rates based on region of interest.) 
 6)
 In region based compression, the following stages should be aware of which region is compressed and should accordingly​ perform computation in it. We should check for feasibility  to multiple compression ratios on the same image frame for different regions but still perform computations appropriately. 
------------------------------------------------------
+%-----------------------------------------------------
 Some of the research challenges include:
 Making use of as less cameras as possible.
 Computation Vs Capture tradeoffs
@@ -39,11 +56,11 @@ Can we generate one equirectangular representation from another with simple tran
 Where should this views be generated?
 Can we do some sort of encoding between the two views for highly correlated regions? (Assign ID to common regions, transmit only one of them)
 
-------------------------------
+%------------------------------
 Communication and Power Regulators
 Humans communication is adaptive to situations. We speak fastly/slowly, change languages, our protocols are adaptive i.e we interrupt others sometimes/ and don't few other times. But the system interfaces are static and are not adaptive, they have fixed protocols and data rates. Can we get inspired from nature and make these interfaces more programmable and dynamically adapt to the requirements of the system?? What is stopping us?? 
 Where do such adaptive interfaces comes into picture?? We do have some sort of dynamic nature at interface hubs. But are they programmable?
--------------------------------
+%-------------------------------
 Optimizing number of cameras using software modelling in Unity/xyz using multiple virtual cameras. 
 Create virtual camera rig, set camera parameters of virtual camera and capture images [ Stanford Work]
 Stitch images captured by virtual camera 

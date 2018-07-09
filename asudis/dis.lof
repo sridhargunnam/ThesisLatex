@@ -2,19 +2,13 @@ Figure\nobreakspace {}\hfill Page \par
 \contentsline {figure}{\numberline {2.1}{\ignorespaces A 360 degree capture and corresponding panorama\relax }}{4}{figure.caption.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Six camera views covering full 360 Hfov\relax }}{5}{figure.caption.2}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces ODS panorama, one for each eyes.\relax }}{6}{figure.caption.3}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Data-flow block diagram dipicting different stages and their inputs and outputs in the end-to-end pipeline in monoscopic 360\relax }}{9}{figure.caption.4}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Dual fisheye gear 360 device used for capturing monoscopic video\relax }}{10}{figure.caption.6}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Data-flow block diagram dipicting different stages and their inputs and outputs in the end-to-end pipeline in ODS\relax }}{11}{figure.caption.7}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Equirectangular Projection of first and second camera frames\relax }}{12}{figure.caption.8}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Optical flow inputs: Overlapping regions of adjacent camera images. Equirectangular Projection of first and second camera frames\relax }}{13}{figure.caption.9}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces ODS Camera Rig\relax }}{14}{figure.caption.10}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces General Off-loading based system pipeline\relax }}{14}{figure.caption.11}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Latency of Individual Stage\relax }}{17}{figure.caption.13}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces X-axis shows the pyramid level and Y-axis shows the runtime for OF\relax }}{18}{figure.caption.14}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{19}{figure.caption.16}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{20}{figure.caption.17}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces CPU execution time of different compute stages. X axis has different sub-stages in optical flow and Y axis correspond to energy per frame.\relax }}{21}{figure.caption.19}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Power Efficiency of Camera ISP Stages in different configurations\relax }}{23}{figure.caption.21}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Framesize of I and P frames\relax }}{24}{figure.caption.22}
-\contentsline {figure}{\numberline {5.1}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{34}{figure.caption.23}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Cubemap based Stitching, Path : /media/gunman/Data/fall-2017/research/mono360/equi2cubic\relax }}{42}{figure.caption.25}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Equirectangular Projection of first and second camera frames\relax }}{9}{figure.caption.9}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Optical flow inputs: Overlapping regions of adjacent camera images. Equirectangular Projection of first and second camera frames\relax }}{10}{figure.caption.10}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Latency of Individual Stage\relax }}{13}{figure.caption.12}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces X-axis shows the pyramid level and Y-axis shows the runtime for OF\relax }}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{16}{figure.caption.15}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{17}{figure.caption.16}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces CPU execution time of different compute stages. X axis has different sub-stages in optical flow and Y axis correspond to energy per frame.\relax }}{18}{figure.caption.18}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Power Efficiency of Camera ISP Stages in different configurations\relax }}{19}{figure.caption.20}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Framesize of I and P frames\relax }}{20}{figure.caption.21}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Cubemap based Stitching\relax }}{29}{figure.caption.25}

@@ -46,62 +46,57 @@ ODS output consist of two panoramas one for each eye, and provide the binocular 
 \end{figure} 
 
 
-\section{Key Words}
-VR Panorama related:
-FOV:
-Binocular Stereo:
-Frame rate:
-Resolution:
+%\section{Key Words}
+%VR Panorama related:
+%FOV:
+%Binocular Stereo:
+%Frame rate:
+%Resolution:
+%
+%Camera Related:
+%Pinhole Camera: 
+%Fisheye:
+%Equirectangular Projection:
+%Camera Calibration Process:
+%Intrinsics:
+%Extrinsics:
 
-Camera Related:
-Pinhole Camera: 
-Fisheye:
-Equirectangular Projection:
-Camera Calibration Process:
-Intrinsics:
-Extrinsics:
-
-Stitching Algorithm Related:
-Optical Flow:
-Temporal Regularization:
-Pyramid:
-Video Compression: 
-
-Compression Related:
-Video Compression Terminology:
-Frame Types:
-JPEG Compression:
-Motion Blocks:
-Motion Vectors:
+%Stitching Algorithm Related:
+%Optical Flow:
+%Temporal Regularization:
+%Pyramid:
+%Video Compression: 
+%
+%Compression Related:
+%Video Compression Terminology:
+%Frame Types:
+%JPEG Compression:
+%Motion Blocks:
+%Motion Vectors:
 
 Image Representations:
 RGB Vs HSV Vs YCbCr(YUV)
-RGB is mainly for display's. HSV is easier as we have intensity channel is available. For vision applications intensity channel is very useful, for graphics people it's easier as they can change the Hue - color, Saturation - colorfulness(intensity of color, shades of color), value - overall intensity  intensity of image. 
+RGB is mainly for display's. HSV is easier as we have intensity channel is available. For vision applications intensity channel is very useful, for graphics people it's easier as they can change the Hue - color, Saturation - colorfulness(intensity of color, shades of color), value - overall intensity  intensity of image. Y'CbCr is used to mainly for storage and transmission efficiency. Y' - Luma, which is intensity of gamma corrected RGB image. We use gamma correction, which is non linear encoding of luminance/brightness to adjust for the way humans perceive light and color, i.e we perceive the variations in darkness more than the variations in brightness. And also we perceive light more than color.The more perceivable luma (Y') is used with high precision, whereas color(Cb Cr) can be of low precision, thereby reducing the size of the image.
 
-Y'CbCr is used to mainly for storage and transmission efficiency. Y' - Luma, which is intensity of gamma corrected RGB image. 
-( We use gamma correction, which is non linear encoding of luminance/brightness to adjust for the way humans perceive light and color, i.e we perceive the variations in darkness more than the variations in brightness. And also we perceive light more than color. )
-
-The more perceivable luma (Y') is used with high precision, whereas color(Cb Cr) can be of low precision, thereby reducing the size of the image.
-
-\section{Related Work:}
-
-%Status quo:
-%Existing 360 camera solutions. \newline
-%\cite{Milbeaut-ISP}
-Many have argued [Edvardo Hotmobile, Nvidia, AMD] that we need resolutions greater than 16k and frame-rate greater of 240 for true immersion in VR. At such higher framerate and resolutions there is lot of information that is redundantly captured, processed and transferred. Therefore, in our work, we study how the energy and latency of each stage get affected by the output resolution and the characterize the bottlenecks in greater detail. 
-
-Existing systems \newline
-Many existing systems like Google Jump, Facebook Surround capture and compute on enormous amount of data consuming several hundreds of watts of power to stitch images in realtime 30fps. 
-Google Jump, Facebook Surround, Mega Stereo, Samsung Gear 360 \newline
-Differentiating our work \newline
-Bottlenecks in the existing systems \newline
-
-
-Compression Related Work: 
-Mobisys [Rubrix]
-Conduit encoding:
-https://avp.github.io/conduit/
-In this  project, they are using region based compression and other smart techniques. Although these works are for VR streaming, they share common techniques like reducing bandwidth by managing the image representation and decreasing latency by close integration of stages in VR streaming.
-Pyramid encoding: https://code.facebook.com/posts/1126354007399553/next-generation-video-encoding-techniques-for-360-video-and-vr/
-I think facebook's pyramid encoding seems a good idea for streaming, at that scale of facebook's needs. But I have some criticism for  cube projection, as they don't use region based compression. The pyramid encoding is a good technique though, to reduce image file size
-
+%\section{Related Work:}
+%
+%%Status quo:
+%%Existing 360 camera solutions. \newline
+%%\cite{Milbeaut-ISP}
+%Many have argued [Edvardo Hotmobile, Nvidia, AMD] that we need resolutions greater than 16k and frame-rate greater of 240 for true immersion in VR. At such higher framerate and resolutions there is lot of information that is redundantly captured, processed and transferred. Therefore, in our work, we study how the energy and latency of each stage get affected by the output resolution and the characterize the bottlenecks in greater detail. 
+%
+%%Existing systems \newline
+%%Many existing systems like Google Jump, Facebook Surround capture and compute on enormous amount of data consuming several hundreds of watts of power to stitch images in realtime 30fps. 
+%%Google Jump, Facebook Surround, Mega Stereo, Samsung Gear 360 \newline
+%%Differentiating our work \newline
+%%Bottlenecks in the existing systems \newline
+%
+%
+%%Compression Related Work: 
+%%Mobisys [Rubrix]
+%%Conduit encoding:
+%%https://avp.github.io/conduit/
+%In this  project, they are using region based compression and other smart techniques. Although these works are for VR streaming, they share common techniques like reducing bandwidth by managing the image representation and decreasing latency by close integration of stages in VR streaming.
+%%Pyramid encoding: https://code.facebook.com/posts/1126354007399553/next-generation-video-encoding-techniques-for-360-video-and-vr/
+%%I think facebook's pyramid encoding seems a good idea for streaming, at that scale of facebook's needs. But I have some criticism for  cube projection, as they don't use region based compression. The pyramid encoding is a good technique though, to reduce image file size
+%%

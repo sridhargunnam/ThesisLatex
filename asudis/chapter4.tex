@@ -6,11 +6,9 @@ We characterize both monoscopic and ODS camera systems. The difference between t
 
 
 \section{Measurement Methodology} % Energy and Latency Measurement 
-Jetson has INA3221 monitors and I2C capabilities to read voltage, current and power for different rails on the SOC and IO. The can also moniter the CPU, GPU, memory clock frequencies. For evaluation we measure the absolute energy of the system and the difference between the idle and active state for individual stages of the pipeline. We also use nvidia tegra stats command to check the clock frequencies of different components like CPU, GPU, Memory Controller for validation.
+Jetson has INA3221 monitors and I2C capabilities to read voltage, current and power for different rails on the SOC and IO. The can also moniter the CPU, GPU, memory clock frequencies. For evaluation we measure the absolute energy of the system and the difference between the idle and active state for individual stages of the pipeline. We also use nvidia tegra stats command to check the clock frequencies of different components like CPU, GPU, Memory Controller for validation. 
 
-The latency of the camera capture and ISP is defined by the framerate(i.e throughput), where for computation stages we measure the latencies in terms of CPU runtime of individual software components in the stitching pipeline. 
-
-One of the critical components of stitching pipeline is optical flow which can take several seconds to compute each output frame on low power embedded CPU. Therefore for realistic estimation of optical flow for accelerator based design, we measure the power and latency of optical flow implementation on zynq FPGA board. 
+The latency of the camera capture and ISP is defined by the framerate(i.e throughput), where for computation stages we measure the latencies in terms of CPU runtime of individual software components in the stitching pipeline. One of the critical components of stitching pipeline is optical flow which can take several seconds to compute each output frame on low power embedded CPU. Therefore for realistic estimation of optical flow for accelerator based design, we measure the power and latency of optical flow implementation on zynq FPGA board. 
 
 \section{Energy Characterization}
 \subsubsection{Individual stage energy}
@@ -25,7 +23,7 @@ One of the critical components of stitching pipeline is optical flow which can t
 % https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6567602
 % https://www.slideshare.net/embeddedvision/opencv-on-zynq-accelerating-4k60-dense-optical-flow-and-stereo-vision-a-presentation-from-xilinx
 % slide 5
-Dense optical flow at resolution 1280 x 720 ; 170 frames/second; Power = 4.8 Watt; Frames/Watt = 35.4
+%Dense optical flow at resolution 1280 x 720 ; 170 frames/second; Power = 4.8 Watt; Frames/Watt = 35.4
 
 % [Comment on monoscopic energy consumption as well.]
 	Note: For the calculating the energy for frame in the above table, the camera capture is configured to 1920x1080 resolution at 30 fps, and the output resolution is 3k. [make absolute energies instead of diff. i.e active -idle]\newline
@@ -72,7 +70,7 @@ The figures show the differences in low light capture with and without brightnes
 [Integrate the images with histograms]\newline
 	\begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equilization.jpg}
+		\includegraphics[width=0.7\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equilization.jpg}
 		\caption{X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.}
 		\label{fig:ex_4_9}
 	\end{center}
@@ -81,7 +79,7 @@ The figures show the differences in low light capture with and without brightnes
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distribution.jpeg}
+		\includegraphics[width=0.7\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distribution.jpeg}
 		\caption{X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.}
 		\label{fig:ex_4_9}
 	\end{center}
@@ -118,23 +116,23 @@ We measure the DRAM capacity required and bandwidth needs as we increase the res
 
 Although we built a system where all the cameras are capturing at same resolution and framerate at a given time, we expect the future cameras make these decisions dynamically to save power. Therefore, we  measure the efficiency of capture and ISP processing at different modes of operation and measure the efficiency of capture and processing in power consumed per pixel at different modes.
 
-DRAM memory size\newline
-\begin{tabular}{c|c|c|c|c}
-	Stage & 3k & 4k & 6k & 8k \\
-	camera Input & - & - & - & - \\
-	ISP & - & - & - & - \\
-	Motion Estimation & - & - & - & - \\
-	fish2EqRect Projection & - & - & - & - \\
-	Optical Flow & - & - & - & - \\
-	Sharpen & - & - & - & - \\
-\end{tabular} 
-
-\vspace{10mm}
-\begin{tabular}{c|c|c|c|c}
-	o/p Resolution & 3k & 4k & 6k & 8k \\
-	Avg. DRAM BW & - & - & - & - \\
-\end{tabular} 
-\vspace{30mm}
+%DRAM memory size\newline
+%\begin{tabular}{c|c|c|c|c}
+%	Stage & 3k & 4k & 6k & 8k \\
+%	camera Input & - & - & - & - \\
+%	ISP & - & - & - & - \\
+%	Motion Estimation & - & - & - & - \\
+%	fish2EqRect Projection & - & - & - & - \\
+%	Optical Flow & - & - & - & - \\
+%	Sharpen & - & - & - & - \\
+%\end{tabular} 
+%
+%\vspace{10mm}
+%\begin{tabular}{c|c|c|c|c}
+%	o/p Resolution & 3k & 4k & 6k & 8k \\
+%	Avg. DRAM BW & - & - & - & - \\
+%\end{tabular} 
+%\vspace{30mm}
 
 % Figure 
 \begin{figure*}
