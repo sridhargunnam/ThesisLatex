@@ -11,4 +11,4 @@ Figure\nobreakspace {}\hfill Page \par
 \contentsline {figure}{\numberline {4.5}{\ignorespaces CPU execution time of different compute stages. X axis has different sub-stages in optical flow and Y axis correspond to energy per frame.\relax }}{18}{figure.caption.18}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Power Efficiency of Camera ISP Stages in different configurations\relax }}{19}{figure.caption.20}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Framesize of I and P frames\relax }}{20}{figure.caption.21}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Cubemap based Stitching\relax }}{29}{figure.caption.25}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Cubemap based Stitching\relax }}{26}{figure.caption.26}

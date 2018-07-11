@@ -1,0 +1,123 @@
+
+
+
+
+
+
+
+
+
+Capturing consumes 24fps/Watt at 4k resolution whereas computing has efficiency of 0.01fps/Watt on a quad core ARM-A57.
+%Intro 
+%\section{Section1}
+%Summarizing the proposed optimizations and future directions.
+DRAM-less
+Stacked Image Sensors
+ADC readout power, Rolling vs global shutter
+Abstractions for hardware software co-design
+a) How to find out which data to sense, send without the intervention of computationally intensive vision algorithms.
+b) How to detect them early in the vision pipeline
+c) Data Driven 
+
+
+%\section{Research questions}
+
+%\subsection{New Image Compression Techniques
+
+Instead of approximating 3D object movements as 2D motion block translation, we need to model the 3D model rotations and translations in compression algorithms.
+
+Optical flow in spherical coordinates.
+	
+3) 
+Develop methods to perform computation on compressed data.
+
+
+4)
+On compression: 
+Evaluate different compression algorithms and compression rates and how they affect data transfer and performing computation on compressed data. We may need to invent/improve existing compression algorithms according to requirements of our application.
+5) 
+Dynamically perform region based compression. If region based compression is performed dynamically, we need architect the system to enable communication between stages to provide necessary compression information. (This might be use case in continuous vision sensing for surveillance application where the region of interest could be a moving object. We may want different compression rates based on region of interest.) 
+6)
+In region based compression, the following stages should be aware of which region is compressed and should accordingly​ perform computation in it. We should check for feasibility  to multiple compression ratios on the same image frame for different regions but still perform computations appropriately. 
+%-----------------------------------------------------
+Some of the research challenges include:
+Making use of as less cameras as possible.
+Computation Vs Capture tradeoffs
+Need for novel computation methods to reduce design size and data transfer.
+Can we generate High resolution Stereoscopic capture using Low resolution monoscopic 360 video capture + low resolution Stereoscopic capture.
+Image representation for high compression, decompression and view transformation.
+Can we generate one equirectangular representation from another with simple transformations. 
+Where should this views be generated?
+Can we do some sort of encoding between the two views for highly correlated regions? (Assign ID to common regions, transmit only one of them)
+
+%------------------------------
+Communication and Power Regulators
+Humans communication is adaptive to situations. We speak fastly/slowly, change languages, our protocols are adaptive i.e we interrupt others sometimes/ and don't few other times. But the system interfaces are static and are not adaptive, they have fixed protocols and data rates. Can we get inspired from nature and make these interfaces more programmable and dynamically adapt to the requirements of the system?? What is stopping us?? 
+Where do such adaptive interfaces comes into picture?? We do have some sort of dynamic nature at interface hubs. But are they programmable?
+%-------------------------------
+Optimizing number of cameras using software modelling in Unity/xyz using multiple virtual cameras. 
+Create virtual camera rig, set camera parameters of virtual camera and capture images [ Stanford Work]
+Stitch images captured by virtual camera 
+Compare with the ground truth, i.e the actual 3D environment 
+https://blogs.unity3d.com/2018/01/26/stereo-360-image-and-video-capture/
+
+\subsection{future work}
+
+
+Future Work:
+Divide it into:
+Hardware/Software and New Technology
+
+Sub categories of different domains and fields. 
+Eg: Vision, Graphics, ML, Systems, Networking etc
+Graphics: Model generation 
+Vision: 
+Systems: Light Field Cameras
+
+Challenges in immersive 360 degree capture for natural environments:
+Reflective challenges in 360 camera capture. Different cameras see different reflections, will the math still be the same. It won't be, because we have not considered illumination. 
+
+Filling the holes using AI
+
+Image representations
+
+Viewpoint aware static and dynamic scene recognition
+Integration of codecs 
+Near sensor ADC
+Motivation for SAR or hybrid SAR to single slope ADC( state of the ART)
+Reducing computation 
+
+\subsection{Research Questions}
+
+
+1)  Data Flow: Reducing redundant computation and transfer.\newline
+Cause $\Rightarrow$ Effect  \newline
+Cause:\newline
+Temporal frame re-reference(reuse) for motion vector calculation.\newline
+Previous optical flow re-reference for temporal regularization of current optical flow.\newline
+Effect: \newline
+Increased DRAM memory consumption \newline
+Increased Memory Bandwidth \newline
+Increased end-to-end pipeline latency \newline
+Cause: \newline
+Re-computation of entire flow pyramids for each frame. (Pyramids of previous flow, estimated flow on current frame, current gray image, and alpha channel, all in floating point)\newline
+Effect:\newline
+Increasing the number of computations needed for each frame. \newline
+(Differentiating between the background and foreground and motion vector inputs to reduce the computations. background information is available in the form of optical flow correspondence, motion vectors are available from the ISP/motion estimation block)\newline
+
+2)  Data abstractions and formats?
+When and where should we find motion vectors?
+How much is size of local buffers at each stage? Make analytical producer consumer model?
+How much energy saving at ADC readout?
+How much savings because of DRAM organization? and bit quantization?
+
+\subsubsection{Data Abstraction and Data Representations}
+Equirectangular format stretches the region near poles thereby storing redundant data. It is also difficult to compress as the existing motion estimation for video compression[facebook] doesn't work on equirectangular format. Cubemap on the other hand reduces the storage of redundant information at the poles. It also helps in compression as we can use existing compression techniques. There is also a trend for equi-angular cubemaps which reduce the file size even further by mapping the spherical images onto smaller cubes.\newline
+
+Which is better format to represent 360 videos monoscopic videos? Equirectangular or cubemap or new formats which can represent spherical images that reduce both data storage and rendering effort? As these formats keep changing, we need design systems that are independent of the type of projection format. \newline
+
+\section{Conclusion}
+
+Characterization summary
+Combination of feature based and dense correspondence based optical flow. 
+
