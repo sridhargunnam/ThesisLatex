@@ -1,5 +1,7 @@
-\chapter{Background and Related Work}
+\chapter{Related Work and Background}
 
+\section{Related Work}
+The methods of capturing omnidirectional stereo to capture environment maps has been around for few decades and is well established in \cite{peleg2001omnistereo, kang2000geometry, ishiguro1990omni}. But these techniques used rotating camera and capturing multiple view points of 360 degree view to generate final stereoscopic output. Such rotating setups can only be used for still captures. Others \cite{richardt2013megastereo,ho2017dual} shows VR panorama generation using a mobile camera device or with lesser number of cameras. But the first robust implementations of ODS  video stitching was demonstrated by \cite{richardt2017video,fbSurround360}. But the challenge with these and other commercial systems is they are used only for capture and stitching ODS is offloaded to either desktop or to cloud. The cloud based stitching is not optimized for latency and power. Sending large amounts of unprocessed frames to cloud takes longer time, and the need for compression and decompression makes the real-time streaming solution difficult in offloading based solutions. Also these solutions currently use several 1000's of CPU's, if not several GPU's in order to stitch ODS at 4k resolution. Such high compute resource is not scalable to larger audience. For example, if 10 percent of US population were to use such solutions we will need the power produced by more than 15 hoover dams. 
 
 \section{Background}
 In this section, we will discuss about different types 360 videos, then about the system level overview and the data flow within the system. We provide some necessary background to understand the image stitching pipeline by visually showing the intermediate outputs. 
@@ -96,7 +98,7 @@ For camera capture we use the libargus camera api provided by Nvidia. For stitch
 
 \begin{table}[]
 
-	\\\specialrule{2pt}{0pt}{0pt}
+%	\\\specialrule{2pt}{0pt}{0pt}
 \begin{tabular}{!{\VRule[2pt]}c|!{\VRule[2pt]}c!{\VRule[2pt]}}
 	
 	\textbf{Cameras} &  \\\specialrule{3pt}{0pt}{0pt}
@@ -116,7 +118,6 @@ For camera capture we use the libargus camera api provided by Nvidia. For stitch
 	\caption{Prototype Specifications}
 \label{Tab:Hardware_Specifications}
 \end{table}
-
 
 %\subsection{Energy}
 %Data and power numbers for Google Jump VR:

@@ -1,4 +1,4 @@
-\begin{thebibliography}{3}
+\begin{thebibliography}{8}
 \newcommand{\enquote}[1]{``#1''}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
@@ -10,6 +10,30 @@ Cuervo, E., K.~Chintalapudi and M.~Kotaru, \enquote{Creating the perfect
   illusion: What will it take to create life-like virtual reality headsets?},
   in \enquote{Proceedings of the 19th International Workshop on Mobile
   Computing Systems \& Applications}, pp. 7--12 (ACM, 2018).
+
+\bibitem[facebook(2017)]{fbSurround360}
+facebook, \enquote{Facebook surround 360},
+  \urlprefix\url{https://github.com/facebook/Surround360} (2017).
+
+\bibitem[Ho and Budagavi(2017)]{ho2017dual}
+Ho, T. and M.~Budagavi, \enquote{Dual-fisheye lens stitching for 360-degree
+  imaging}, in \enquote{Acoustics, Speech and Signal Processing (ICASSP), 2017
+  IEEE International Conference on}, pp. 2172--2176 (IEEE, 2017).
+
+\bibitem[Ishiguro \emph{et~al.}(1990)]{ishiguro1990omni}
+Ishiguro, H., M.~Yamamoto and S.~Tsuji, \enquote{Omni-directional stereo for
+  making global map}, in \enquote{Computer Vision, 1990. Proceedings, Third
+  International Conference on}, pp. 540--547 (IEEE, 1990).
+
+\bibitem[Kang \emph{et~al.}(2000)]{kang2000geometry}
+Kang, S.~B., R.~Szeliski and P.~Anandan, \enquote{The geometry-image
+  representation tradeoff for rendering.}, in \enquote{ICIP}, pp. 13--16
+  (2000).
+
+\bibitem[Peleg \emph{et~al.}(2001)]{peleg2001omnistereo}
+Peleg, S., M.~Ben-Ezra and Y.~Pritch, \enquote{Omnistereo: Panoramic stereo
+  imaging}, IEEE Transactions on Pattern Analysis and Machine Intelligence
+  \textbf{23}, 3, 279--290 (2001).
 
 \bibitem[Richardt \emph{et~al.}(2013)]{richardt2013megastereo}
 Richardt, C., Y.~Pritch, H.~Zimmer and A.~Sorkine-Hornung, \enquote{Megastereo:
