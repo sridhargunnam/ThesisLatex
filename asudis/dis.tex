@@ -13,26 +13,27 @@
 \usepackage[pageanchor=true,plainpages=false,pdfpagelabels,bookmarks,bookmarksnumbered]{hyperref}
 \usepackage{subcaption}
 \usepackage{textcomp} % for degree symbol
-
+\usepackage{array,booktabs,arydshln,xcolor}
+\newcommand\VRule[1][\arrayrulewidth]{\vrule width #1}
 \begin{document}
 %-----------------------front matter
 \pagenumbering{roman}
-\title{Characterization of Energy and Performance Bottlenecks in \newline Omnidirectional Camera Systems}
+\title{Characterization of Energy and Performance Bottlenecks in a Omni-directional Camera Systems}
 \author{Sridhar Gunnam}
 \degreeName{Master of Science}
 \paperType{Thesis}
 \defensemonth{July}
 \defenseyear{2018}
-\gradmonth{July}
+\gradmonth{August}
 \gradyear{2018}
-\chair{Prof. Robert LiKamWa}
-\memberOne{Prof. Pavan Turaga}
-\memberTwo{Prof. Suren Jayasuriya}
+\chair{Robert LiKamWa}
+\memberOne{Pavan Turaga}
+\memberTwo{Suren Jayasuriya}
 
 \maketitle
 \doublespace
 \include{abstract}
-\dedicationpage{}
+%\dedicationpage{}
 \include{ack}
 \tableofcontents
 % This puts the word "Page" right justified above everything else.
@@ -62,7 +63,7 @@
 \pagenumbering{arabic}
 \include{chapter1} % Intro
 \include{chapter2} % Background
-\include{chapter3} % Characterization and Bottlenecks(Research Questions)
+%\include{chapter3} % Characterization and Bottlenecks(Research Questions)
 \include{chapter4} % Research Questions
 %\include{chapter5} % Proposed Mechanisms
 \include{chapter6} % Discussions
@@ -77,8 +78,8 @@
 \bibliography{dis}}
 \renewcommand{\chaptername}{APPENDIX}
 \addtocontents{toc}{APPENDIX \par}
-\appendix
-\include{appendix1}
+%\appendix
+%\include{appendix1}
 %\appendix
 %\include{appendix2}
 %\appendix

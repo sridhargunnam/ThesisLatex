@@ -1,14 +1,13 @@
 Figure\nobreakspace {}\hfill Page \par 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces A 360 degree capture and corresponding panorama\relax }}{4}{figure.caption.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Six camera views covering full 360 Hfov\relax }}{5}{figure.caption.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces ODS panorama, one for each eyes.\relax }}{6}{figure.caption.3}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Equirectangular Projection of first and second camera frames\relax }}{9}{figure.caption.9}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Optical flow inputs: Overlapping regions of adjacent camera images. Equirectangular Projection of first and second camera frames\relax }}{10}{figure.caption.10}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Latency of Individual Stage\relax }}{13}{figure.caption.12}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces X-axis shows the pyramid level and Y-axis shows the runtime for OF\relax }}{14}{figure.caption.13}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{16}{figure.caption.15}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{17}{figure.caption.16}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces CPU execution time of different compute stages. X axis has different sub-stages in optical flow and Y axis correspond to energy per frame.\relax }}{18}{figure.caption.18}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Power Efficiency of Camera ISP Stages in different configurations\relax }}{19}{figure.caption.20}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Framesize of I and P frames\relax }}{20}{figure.caption.21}
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Cubemap based Stitching\relax }}{26}{figure.caption.26}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A 360 degree capture and corresponding panorama\relax }}{4}{figure.caption.2}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Left side of the picture shows the multi-view point capture and the right side shows the two ODS panorama, one for each eyes.\relax }}{5}{figure.caption.4}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Equirectangular Projection of different fisheye images with offsets showing where they belong in the final ODS panorama.\relax }}{6}{figure.caption.6}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces From the overlapping view of adjacent views, we get stereo disparity, i.e how far each point is away from the camera.\relax }}{7}{figure.caption.8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces System overview, the Camera, ISP, Processor and Storage.\relax }}{8}{figure.caption.12}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Camera capture rig and the evaluation platform\relax }}{10}{figure.caption.15}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Latency of Individual Stage\relax }}{14}{figure.caption.18}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces X-axis shows the pyramid level and Y-axis shows the runtime for OF\relax }}{15}{figure.caption.19}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{16}{figure.caption.21}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{17}{figure.caption.22}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces CPU execution time of different compute stages. X axis has different sub-stages in optical flow and Y axis correspond to energy per frame.\relax }}{18}{figure.caption.24}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Power Efficiency of Camera ISP Stages in different configurations\relax }}{19}{figure.caption.26}
