@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.28)  11 JUL 2018 20:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.28)  11 JUL 2018 23:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -557,43 +557,31 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 
 LaTeX Warning: Label `fig:ex_4_9' multiply defined.
 
-
-LaTeX Warning: Label `fig:ex_4_9' multiply defined.
-
-
-LaTeX Warning: Label `fig:ex_4_9' multiply defined.
-
-
-LaTeX Warning: Label `fig:ex_4_9' multiply defined.
-
-
-LaTeX Warning: Label `fig:ex_4_9' multiply defined.
-
 ) (./chapter6.aux) (./chapter7.aux) (./vita.aux))
 \openout1 = `dis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 18.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 19.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -663,7 +651,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -673,9 +661,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count140
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
 (./dis.out) (./dis.out)
 \@outlinefile=\write3
@@ -786,7 +774,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
-] [4]
+]
 
 Package geometry Warning: `letterpaper': not available in `\newgeometry'; skipp
 ed.
@@ -827,7 +815,7 @@ ed.
 \tf@lot=\write5
 \openout5 = `dis.lot'.
 
- [5
+ [4
 
 
 
@@ -878,7 +866,7 @@ im-ages with off-sets show-
 \tf@lof=\write6
 \openout6 = `dis.lof'.
 
- [6
+ [5
 
 
 
@@ -917,7 +905,7 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 12.
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 </media/gunman/Data/thesis/ThesisLatex/data/images/fisheye_image_pair.jpg, id=2
-21, 963.162pt x 482.019pt>
+05, 963.162pt x 482.019pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/fisheye_image_pair.jpg 
 Graphic file (type jpg)
 <use /media/gunman/Data/thesis/ThesisLatex/data/images/fisheye_image_pair.jpg>
@@ -926,7 +914,7 @@ eye_image_pair.jpg  used on input line 17. on input line 17.
 Package pdftex.def Info: Requested size: 216.81pt x 108.50107pt on input line 1
 7.
 </media/gunman/Data/thesis/ThesisLatex/data/images/fisheye_2_equirect.png, id=2
-22, 696.10063pt x 348.30125pt>
+06, 696.10063pt x 348.30125pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/fisheye_2_equirect.png 
 Graphic file (type png)
 <use /media/gunman/Data/thesis/ThesisLatex/data/images/fisheye_2_equirect.png>
@@ -939,7 +927,7 @@ Package pdftex.def Info: Requested size: 216.81pt x 108.48247pt on input line 2
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [4]
-</media/gunman/Data/thesis/ThesisLatex/data/images/ODS_IO_images.png, id=233, 1
+</media/gunman/Data/thesis/ThesisLatex/data/images/ODS_IO_images.png, id=218, 1
 576.89125pt x 657.45625pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/ODS_IO_images.png Graph
 ic file (type png)
@@ -952,7 +940,7 @@ e 41.
 </media/gunman/Data/thesis/ThesisLatex/data/images/fisheye_2_equirect.png> </me
 dia/gunman/Data/thesis/ThesisLatex/data/images/ODS_IO_images.png>]
 </media/gunman/Data/thesis/ThesisLatex/data/images/EqRect_offset_fov_viz_loop_v
-3.jpg, id=241, 943.525pt x 1004.75375pt>
+3.jpg, id=226, 943.525pt x 1004.75375pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/EqRect_offset_fov_viz_l
 oop_v3.jpg Graphic file (type jpg)
 <use /media/gunman/Data/thesis/ThesisLatex/data/images/EqRect_offset_fov_viz_lo
@@ -965,7 +953,7 @@ Package pdftex.def Info: Requested size: 216.81pt x 230.87387pt on input line 5
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-</media/gunman/Data/thesis/ThesisLatex/data/images/stereo_disparity.png, id=243
+</media/gunman/Data/thesis/ThesisLatex/data/images/stereo_disparity.png, id=228
 , 805.0075pt x 623.32875pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/stereo_disparity.png Gr
 aphic file (type png)
@@ -980,7 +968,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [6] [7 </media/gunman/Data/thesis/ThesisLatex/data/images/EqRect_offset_fov_viz
 _loop_v3.jpg>] [8 </media/gunman/Data/thesis/ThesisLatex/data/images/stereo_dis
 parity.png>]
-</media/gunman/Data/thesis/ThesisLatex/data/images/System_overview.png, id=263,
+</media/gunman/Data/thesis/ThesisLatex/data/images/System_overview.png, id=248,
  1127.21124pt x 520.94624pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/System_overview.png Gra
 phic file (type png)
@@ -989,19 +977,44 @@ Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Syst
 em_overview.png  used on input line 79. on input line 79.
 Package pdftex.def Info: Requested size: 433.62001pt x 200.40196pt on input lin
 e 79.
-</media/gunman/Data/thesis/ThesisLatex/data/images/Prototype.png, id=265, 794.9
+</media/gunman/Data/thesis/ThesisLatex/data/images/Prototype.png, id=250, 794.9
 7pt x 674.52pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/Prototype.png Graphic f
 ile (type png)
 <use /media/gunman/Data/thesis/ThesisLatex/data/images/Prototype.png>
 Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Prot
 otype.png  used on input line 92. on input line 92.
-Package pdftex.def Info: Requested size: 433.62001pt x 367.93033pt on input lin
+Package pdftex.def Info: Requested size: 476.98465pt x 404.72542pt on input lin
 e 92.
- [9 </media/gunman/Data/thesis/ThesisLatex/data/images/System_overview.png>]
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 99.
+Overfull \hbox (43.36464pt too wide) in paragraph at lines 92--93
+ [] 
+ []
+
+[9 </media/gunman/Data/thesis/ThesisLatex/data/images/System_overview.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 	\\\specialrule
+                     {3pt}{0pt}{0pt}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Misplaced \noalign.
+\specialrule #1#2#3->\noalign 
+                              {\ifnum 0=`}\fi \@aboverulesep =#2\global \@be...
+l.101 	\\\specialrule{3pt}{0pt}{0pt}
+                                    
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) [10 </media/gunman/Data/thesis/ThesisLatex/data/images/Prototype.png>]
 [11]
@@ -1014,86 +1027,85 @@ Chapter 3.
 
 
 ]
-Overfull \hbox (47.03099pt too wide) in paragraph at lines 14--25
-[] 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 		\\\specialrule
+                     {3pt}{0pt}{0pt}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Misplaced \noalign.
+\specialrule #1#2#3->\noalign 
+                              {\ifnum 0=`}\fi \@aboverulesep =#2\global \@be...
+l.27 		\\\specialrule{3pt}{0pt}{0pt}
+                                    
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
+Overfull \hbox (12.44502pt too wide) in paragraph at lines 28--36
+[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--25
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
 [13]
-</media/gunman/Data/thesis/ThesisLatex/data/images/stage_latency.PNG, id=291, 8
-40.13875pt x 220.57407pt>
-File: /media/gunman/Data/thesis/ThesisLatex/data/images/stage_latency.PNG Graph
-ic file (type png)
-<use /media/gunman/Data/thesis/ThesisLatex/data/images/stage_latency.PNG>
-Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/stag
-e_latency.PNG  used on input line 40. on input line 40.
-Package pdftex.def Info: Requested size: 476.98465pt x 125.2304pt on input line
- 40.
+</media/gunman/Data/thesis/ThesisLatex/data/images/Best_case_rio_presentation.j
+pg, id=276, 816.04875pt x 610.28pt>
+File: /media/gunman/Data/thesis/ThesisLatex/data/images/Best_case_rio_presentat
+ion.jpg Graphic file (type jpg)
+<use /media/gunman/Data/thesis/ThesisLatex/data/images/Best_case_rio_presentati
+on.jpg>
+Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Best
+_case_rio_presentation.jpg  used on input line 46. on input line 46.
+Package pdftex.def Info: Requested size: 433.62001pt x 324.28494pt on input lin
+e 46.
 
-Overfull \hbox (43.36464pt too wide) in paragraph at lines 40--41
- [] 
- []
 
-</media/gunman/Data/thesis/ThesisLatex/data/images/pyramid_runtime.png, id=292,
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+</media/gunman/Data/thesis/ThesisLatex/data/images/chart.png, id=278, 602.25pt 
+x 372.39125pt>
+File: /media/gunman/Data/thesis/ThesisLatex/data/images/chart.png Graphic file 
+(type png)
+<use /media/gunman/Data/thesis/ThesisLatex/data/images/chart.png>
+Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/char
+t.png  used on input line 57. on input line 57.
+Package pdftex.def Info: Requested size: 433.62001pt x 268.13286pt on input lin
+e 57.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14] [15 </media/gunman/Data/thesis/ThesisLatex/data/images/Best_case_rio_prese
+ntation.jpg>] [16 </media/gunman/Data/thesis/ThesisLatex/data/images/chart.png 
+(PNG copy)>]
+</media/gunman/Data/thesis/ThesisLatex/data/images/pyramid_runtime.png, id=297,
  602.25pt x 372.39125pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/pyramid_runtime.png Gra
 phic file (type png)
 <use /media/gunman/Data/thesis/ThesisLatex/data/images/pyramid_runtime.png>
 Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/pyra
-mid_runtime.png  used on input line 54. on input line 54.
+mid_runtime.png  used on input line 87. on input line 87.
 Package pdftex.def Info: Requested size: 433.62001pt x 268.13286pt on input lin
-e 54.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14 </media/gunman/Data/thesis/ThesisLatex/data/images/stage_latency.PNG>]
-[15 </media/gunman/Data/thesis/ThesisLatex/data/images/pyramid_runtime.png (PNG
- copy)>]
-</media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equilizatio
-n.jpg, id=303, 462.528pt x 346.896pt>
-File: /media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equili
-zation.jpg Graphic file (type jpg)
-<use /media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equiliz
-ation.jpg>
-Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Befo
-re_Histogram_equilization.jpg  used on input line 71. on input line 71.
-Package pdftex.def Info: Requested size: 303.53267pt x 227.66052pt on input lin
-e 71.
-</media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distributio
-n.jpeg, id=304, 462.528pt x 346.896pt>
-File: /media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distri
-bution.jpeg Graphic file (type jpg)
-<use /media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distrib
-ution.jpeg>
-Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Norm
-al_Histogram_Distribution.jpeg  used on input line 80. on input line 80.
-Package pdftex.def Info: Requested size: 303.53267pt x 227.66052pt on input lin
-e 80.
+e 87.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 </media/gunman/Data/thesis/ThesisLatex/data/images/ExecutionTimeComputeStages.p
-ng, id=305, 602.25pt x 372.39125pt>
+ng, id=298, 602.25pt x 372.39125pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/ExecutionTimeComputeSta
 ges.png Graphic file (type png)
 <use /media/gunman/Data/thesis/ThesisLatex/data/images/ExecutionTimeComputeStag
@@ -1102,27 +1114,53 @@ Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Exec
 utionTimeComputeStages.png  used on input line 100. on input line 100.
 Package pdftex.def Info: Requested size: 433.62001pt x 268.13286pt on input lin
 e 100.
-[16 </media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equiliz
-ation.jpg>]
+[17]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17 </media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distrib
-ution.jpeg>] [18 </media/gunman/Data/thesis/ThesisLatex/data/images/ExecutionTi
-meComputeStages.png (PNG copy)>]
+[18 </media/gunman/Data/thesis/ThesisLatex/data/images/pyramid_runtime.png (PNG
+ copy)>]
 </media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Camera_I
-SP_Stages_in_different_configurations.png, id=321, 811.03pt x 500.87125pt>
+SP_Stages_in_different_configurations.png, id=310, 811.03pt x 500.87125pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Cam
 era_ISP_Stages_in_different_configurations.png Graphic file (type png)
 <use /media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Came
 ra_ISP_Stages_in_different_configurations.png>
 Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Powe
 r_Efficiency_of_Camera_ISP_Stages_in_different_configurations.png  used on inpu
-t line 138. on input line 138.
+t line 120. on input line 120.
 Package pdftex.def Info: Requested size: 433.62001pt x 267.79915pt on input lin
+e 120.
+ [19 </media/gunman/Data/thesis/ThesisLatex/data/images/ExecutionTimeComputeSta
+ges.png (PNG copy)>] [20 </media/gunman/Data/thesis/ThesisLatex/data/images/Pow
+er_Efficiency_of_Camera_ISP_Stages_in_different_configurations.png (PNG copy)>]
+</media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equilizatio
+n.jpg, id=324, 462.528pt x 346.896pt>
+File: /media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equili
+zation.jpg Graphic file (type jpg)
+<use /media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equiliz
+ation.jpg>
+Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Befo
+re_Histogram_equilization.jpg  used on input line 138. on input line 138.
+Package pdftex.def Info: Requested size: 346.89732pt x 260.18723pt on input lin
 e 138.
- [19 </media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Cam
-era_ISP_Stages_in_different_configurations.png (PNG copy)>]) [20]
+</media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distributio
+n.jpeg, id=325, 462.528pt x 346.896pt>
+File: /media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distri
+bution.jpeg Graphic file (type jpg)
+<use /media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distrib
+ution.jpeg>
+Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Norm
+al_Histogram_Distribution.jpeg  used on input line 147. on input line 147.
+Package pdftex.def Info: Requested size: 346.89732pt x 260.18723pt on input lin
+e 147.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [21 </media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equil
+ization.jpg>] [22 </media/gunman/Data/thesis/ThesisLatex/data/images/Normal_His
+togram_Distribution.jpeg>]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
@@ -1131,21 +1169,21 @@ Chapter 4.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 5.
 
-[21
+[23
 
 
 
-] [22]
+] [24]
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-) [23]
+) [25]
 \openout2 = `chapter7.aux'.
 
  (./chapter7.tex
 Chapter 5.
-) [24
+) [26
 
 
 
@@ -1160,32 +1198,38 @@ Underfull \hbox (badness 5985) in paragraph at lines 15--17
 2 https : / / github . com / facebook /
  []
 
-) [25
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
+\OT1/lmtt/m/n/12 xilinx . com / html _ docs / xilinx2018 _ 1 / sdsoc _ doc / oq
+m1517269835518 . html$[]
+ []
+
+) [27
 
 ]
 \openout2 = `vita.aux'.
 
  (./vita.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
  (./dis.aux (./abstract.aux) (./ack.aux) (./chapter1.aux)
 (./chapter2.aux) (./chapter4.aux) (./chapter6.aux) (./chapter7.aux) (./vita.aux
 ))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 88.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
 Package rerunfilecheck Info: File `dis.out' has not changed.
-(rerunfilecheck)             Checksum: 1B84C592D0D4986BC89AC4CB5B5759DB;1550.
+(rerunfilecheck)             Checksum: 529D1E6CD01DD34043D9A34E38D41C27;1330.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
  ) 
 Here is how much of TeX's memory you used:
- 9860 strings out of 492995
- 148056 string characters out of 6135073
- 241807 words of memory out of 5000000
- 13099 multiletter control sequences out of 15000+600000
+ 9880 strings out of 492995
+ 148621 string characters out of 6135073
+ 243577 words of memory out of 5000000
+ 13111 multiletter control sequences out of 15000+600000
  30271 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,11n,43p,1455b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1195,10 +1239,10 @@ texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on dis.pdf (32 pages, 6257261 bytes).
+Output written on dis.pdf (33 pages, 6352666 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 346 compressed objects within 4 object streams
- 90 named destinations out of 1000 (max. 500000)
- 250 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 417 PDF objects out of 1000 (max. 8388607)
+ 357 compressed objects within 4 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 

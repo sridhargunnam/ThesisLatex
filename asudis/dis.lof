@@ -5,9 +5,10 @@ Figure\nobreakspace {}\hfill Page \par
 \contentsline {figure}{\numberline {2.4}{\ignorespaces From the overlapping view of adjacent views, we get stereo disparity, i.e how far each point is away from the camera.\relax }}{8}{figure.caption.8}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces System overview, the Camera, ISP, Processor and Storage.\relax }}{9}{figure.caption.12}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Camera capture rig and the evaluation platform\relax }}{10}{figure.caption.15}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Latency of Individual Stage\relax }}{14}{figure.caption.18}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces X-axis shows the pyramid level and Y-axis shows the runtime for OF\relax }}{15}{figure.caption.19}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{16}{figure.caption.21}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.\relax }}{17}{figure.caption.22}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces CPU execution time of different compute stages. X axis has different sub-stages in optical flow and Y axis correspond to energy per frame.\relax }}{18}{figure.caption.24}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Power Efficiency of Camera ISP Stages in different configurations\relax }}{19}{figure.caption.26}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces X axis shows the variations of pixels across 1000 consecutive frames, Y axis shows total number of pixels with a particular variation\relax }}{15}{figure.caption.20}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Chart showing the distribution of power of different components during capture and storage.\relax }}{16}{figure.caption.22}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces X-axis shows the pyramid level and Y-axis shows the runtime for OF\relax }}{18}{figure.caption.27}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces CPU execution time of different compute stages. X axis has different sub-stages in optical flow and Y axis correspond to energy per frame.\relax }}{19}{figure.caption.29}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Power Efficiency of Camera ISP Stages in different configurations\relax }}{20}{figure.caption.31}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Image intensity histogram for low lightning conditions\relax }}{21}{figure.caption.34}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Image intensity histogram for good lightning conditions\relax }}{22}{figure.caption.35}

@@ -13,45 +13,51 @@ A level-1 auxiliary file: vita.aux
 Database file #1: dis.bib
 Warning--entry type for "fbSurround360" isn't style-file defined
 --line 56 of file dis.bib
-You've used 8 entries,
+Warning--entry type for "denseOFlowXilinx" isn't style-file defined
+--line 64 of file dis.bib
+You're missing a field name---line 68 of file dis.bib
+ :  url = {https://www.xilinx.com/html_docs/xilinx2018_1/sdsoc_doc/oqm1517269835518.html}, 
+ :                                                                                         %https://www.slideshare.net/embeddedvision/opencv-on-zynq-accelerating-4k60-dense-optical-flow-and-stereo-vision-a-presentation-from-xilinx},
+I'm skipping whatever remains of this entry
+You've used 9 entries,
             2456 wiz_defined-function locations,
-            704 strings with 6670 characters,
-and the built_in function-call counts, 4230 in all, are:
-= -- 390
-> -- 166
-< -- 8
-+ -- 60
-- -- 50
-* -- 368
-:= -- 670
-add.period$ -- 8
-call.type$ -- 8
-change.case$ -- 65
-chr.to.int$ -- 8
-cite$ -- 8
-duplicate$ -- 194
-empty$ -- 357
-format.name$ -- 67
-if$ -- 910
+            709 strings with 6837 characters,
+and the built_in function-call counts, 4496 in all, are:
+= -- 414
+> -- 174
+< -- 9
++ -- 63
+- -- 52
+* -- 388
+:= -- 724
+add.period$ -- 9
+call.type$ -- 9
+change.case$ -- 71
+chr.to.int$ -- 9
+cite$ -- 9
+duplicate$ -- 208
+empty$ -- 378
+format.name$ -- 70
+if$ -- 960
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 7
-newline$ -- 32
-num.names$ -- 24
-pop$ -- 66
+newline$ -- 35
+num.names$ -- 27
+pop$ -- 69
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 71
 quote$ -- 0
-skip$ -- 149
+skip$ -- 158
 stack$ -- 0
-substring$ -- 282
-swap$ -- 83
+substring$ -- 294
+swap$ -- 85
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 54
 warning$ -- 0
-while$ -- 34
+while$ -- 36
 width$ -- 0
-write$ -- 94
-(There was 1 warning)
+write$ -- 104
+(There was 1 error message)

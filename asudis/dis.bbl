@@ -1,4 +1,4 @@
-\begin{thebibliography}{8}
+\begin{thebibliography}{9}
 \newcommand{\enquote}[1]{``#1''}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
@@ -45,5 +45,10 @@ Richardt, C., Y.~Pritch, H.~Zimmer and A.~Sorkine-Hornung, \enquote{Megastereo:
 Richardt, C., J.~Tompkin, J.~Halsey, A.~Hertzmann, J.~Starck and O.~Wang,
   \enquote{Video for virtual reality}, in \enquote{ACM SIGGRAPH 2017 Courses},
   p.~16 (ACM, 2017).
+
+\bibitem[XilinxDenseOF(2017)]{denseOFlowXilinx}
+XilinxDenseOF, \enquote{Dense optical flow on xilinx zynq ultrascale+},
+  \urlprefix\url{https://www.xilinx.com/html_docs/xilinx2018_1/sdsoc_doc/oqm1517269835518.html}
+  (2017).
 
 \end{thebibliography}

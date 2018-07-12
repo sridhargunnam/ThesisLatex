@@ -1,7 +1,18 @@
 \chapter{Characterization}
+\label{chap:Char}
+The goal of the work is to characterize the energy and latency of end-to-end ODS camera  systems and propose optimizations. As the existing OD camera systems are built from off the shelf camera devices and uses the conventional stitching algorithms, they capture, transfer redundant data and perform redundant computations. The redundancy can be attributed to the sptio-temporal correlation between the frames. The main challenge in OD panorama generation is to understand the data flow across the system and to make decisions on data abstractions needed at different subcomponents to reduce the total system power and latency.
 
-The goal of the work is to characterize the energy and latency of end-to-end Omni-directional(OD) Camera  systems both in the hardware and software pipeline and propose optimizations. As the existing OD camera systems are built from off the shelf camera devices and uses the conventional stitching algorithms, they capture, transfer redundant data and perform redundant computations. The redundancy can be attributed to the sptio-temporal correlation between the frames. The main challenge in OD panorama generation is to understand the data flow across the system and to make decisions on data abstractions needed at different subcomponents to reduce the total system power.
-
+We classify our findings into two categories, i.e the resons for high energy and high latency.
+For high energy or power consumption, we divide into following four categories
+\begin{itemize}
+	\item Redundant Capture, and Computations
+	\item High Data rates across interfaces
+	\item Huge memory footprint
+\end{itemize}
+For high latency we analyze,
+\begin{itemize}
+	\item Effect of sequential execution on stage and sub-stage latencies.
+\end{itemize}
 
 \section{Measurement Methodology} % Energy and Latency Measurement 
 Jetson has INA3221 monitors and I2C capabilities to read voltage, current and power for different rails on the SOC and IO. The can also moniter the CPU, GPU, memory clock frequencies. For evaluation we measure the absolute energy of the system and the difference between the idle and active state for individual stages of the pipeline. We also use nvidia tegra stats command to check the clock frequencies of different components like CPU, GPU, Memory Controller for validation. 
@@ -9,87 +20,76 @@ Jetson has INA3221 monitors and I2C capabilities to read voltage, current and po
 The latency of the camera capture and ISP is defined by the framerate(i.e throughput), where for computation stages we measure the latencies in terms of CPU runtime of individual software components in the stitching pipeline. One of the critical components of stitching pipeline is optical flow which can take several seconds to compute each output frame on low power embedded CPU. Therefore for realistic estimation of optical flow for accelerator based design, we measure the power and latency of optical flow implementation on zynq FPGA board. 
 
 \section{Energy Characterization}
+We first highlight the overall system energy profile. For the calculating the energy for frame in the above table, the camera capture is configured to 1920x1080 resolution at 30 fps, and the output resolution is 3k. We then explain about the key findings discussed in the introduction of this chapter. 
 \subsubsection{Individual stage energy}
 
-	\begin{tabular}{c|c|c|c}
-	Power Rail & Diff. Current(mA) & Voltage(mV) & Energy ( mJ/frame) \\
-	Sony IMX-274 (Camera) & 375.4 & 3336 & 41.7 \\
-	ISP+CODEC (TX2) & 102.7 & 19152 & 65.6 \\
-	ARM-A57(Capture + Stitching) & 16.4 + 120 (16s) & 19144 & 10.5 + 2296*16\\
-	DRAM (Capture + Stitching)  & 260.4 + 105 (16s)  & 4792 & 41.6 + 105*16 \\
-	\end{tabular} \newline \newline
-% https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6567602
-% https://www.slideshare.net/embeddedvision/opencv-on-zynq-accelerating-4k60-dense-optical-flow-and-stereo-vision-a-presentation-from-xilinx
-% slide 5
-%Dense optical flow at resolution 1280 x 720 ; 170 frames/second; Power = 4.8 Watt; Frames/Watt = 35.4
+\begin{table}[h]
+		\\\specialrule{3pt}{0pt}{0pt}
+	\begin{tabular}
+		{!{\VRule[2pt]}c|!{\VRule[2pt]}c!{\VRule[2pt]}c!{\VRule[2pt]}c!{\VRule[2pt]}}
+	Subsystem & Current(mA) & Voltage(mV) & Energy( mJ/frm) \\\specialrule{2pt}{0pt}{0pt}
+	Sony IMX-274 (Camera) & 375.4 & 3336 & 41.7 \\\hdashline
+	ISP+CODEC (TX2) & 102.7 & 19152 & 65.6 	\\\hdashline
+	ARM-A57(Cap. + Stitch*) & 16.4 + 120 (16s) & 19144 & 10.5 + 36,736	\\\hdashline
+	DRAM (Cap. + Stitch*)  & 260.4 + 105 (16s)  & 4792 & 41.6 + 105*16 	\\\specialrule{2pt}{0pt}{0pt}
+	\end{tabular} 
+	\caption{Energy Characterization of Individual Stages}
+\label{Tab:Energy_Char}
+\end{table}
 
-% [Comment on monoscopic energy consumption as well.]
-	Note: For the calculating the energy for frame in the above table, the camera capture is configured to 1920x1080 resolution at 30 fps, and the output resolution is 3k. [make absolute energies instead of diff. i.e active -idle]\newline
-	
-	As seen in the above table, the stitching in software is highly expensive for CPU,and DRAM blocks, i.e the computation stage energy dominates the capture stage. CPU runtime to render each output frame of 3k is ~16 sec, which increases the both the energy and end-to-end latency. The other options include using GPU's, FPGA, ASIC's. From Nvi   Therefore, we approximate the energy and latency for FPGA based accelerator based on Xilinx's implementation of optical flow on Zynq board, discussed in chapter5.\newline
+	Note*: As seen in the above table \ref{Tab:Energy_Char}, the stitching in software is highly expensive for CPU,and DRAM blocks, i.e the computation stage energy dominates the capture stage. CPU runtime to render each output frame of 3k is ~16 sec, which increases the both the energy and end-to-end latency. The other options include using GPU's, FPGA, ASIC's. Therefore, we approximate the energy and latency for FPGA based accelerator based on Xilinx's implementation of optical flow on Zynq board, discussed in chapter5.\newline
+
+\subsubsection{Redundant Capture}
+Natural images are redundant and but sensors are not smart to capture only the variations of the scene. Instead sensors capture and convert all the pixels for all the temporal frames. This leads to redundant conversion cycles by ADC's inside the sensor. It is therefore important to reuse the previous data to reduce the conversion cycles of the ADC to reduce the sensor power. 
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Best_case_rio_presentation.jpg}
+	\end{center}
+	\caption{X axis shows the variations of pixels across 1000 consecutive frames, Y axis shows total number of pixels with a particular variation}	
+	\label{fig:sensorRedundancy}
+\end{figure} 
+
+\subsubsection{High Data rates across interfaces}
+As shown in the \ref{fig:pieCapPow}, the interfaces consume about one third of total power during capture. The high data rates lead lead to higher power consumption. But having compression near sensor and decompression near ISP will increase to high latency and may increase the sub-system power. A neat technique is to use the co-design of ISP with the interface encoding schemes. The ISP has Bayer statistics for different regions of the image. As the temporal frames are redundant, the Bayer statistics can be used for encoding CSI interface data efficiently. 
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/chart.png}
+	\end{center}
+	\caption{Chart showing the distribution of power of different components during capture and storage.}	
+	\label{fig:pieCapPow}
+\end{figure} 
+
+\subsubsection{Huge Memory Footprint}
+The existing offloading based solutions have high memory footprint. One of the main reason being the inability to reuse the data generated by different subsystems. For example, during optical flow we load the current and previous image frames just to compute motion vector data. But this data is already available in ISP stage. Having data abstractions to reuse such data can reduce the memory requirement by upto 50 \%.
+
+
+\subsubsection{Redundant Computations}
+Similar to the sensor capture, the stitching algorithms perform lot of redundant memory access and computations. Even though only few pixels change between frames, the existing algorithms compute over the entire image for every frame. Building custom hardware with fine power gating can be used to reduce the activity of the computation units where the there is no motion across frames. 
+
+
 
 \section{Latency Characterization}
 
-\subsection{Individual Stage latency}
-We define stage latency and end-to-end latency for clarity. End-to-end latency is the cumulative latency of all the individual stages. The stage latency is latency of individual stage to process a single frame. 
-
-For camera system and ISP stages the stage latency is derived from throughput, i.e inverse of fps. The end to end latency is as given in NVIDIA camera API documentation, which is one frame latency for camera stage, and one for ISP stage.
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=1.1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/stage_latency.PNG}
-		\caption{Latency of Individual Stage}
-		\label{fig:ex_4_9}
-	\end{center}
-	\vspace{-0.3in}
-\end{figure} 
-
-We measure the latency of computation in terms of CPU runtime. The optical flow, view synthesis and image sharpening stages take 98\% of total CPU runtime. Of this the major component is optical flow generation which consumes [] percent of runtime. The sharpening stage doesn't seem to benefit the image quality, so we discard the sharpening stage entirely in the current pipeline and leave it for future work. We focus on the optical flow stage which dominates both in terms of memory usage, and computation. 
+\subsubsection{Individual Stage latency}
 
 
-\subsection{Optical flow runtime breakdown}
-Time for each Pyramid search(98\%) as shown in fig 3.1.
+For camera system and ISP stages the stage latency is derived from throughput, i.e inverse of fps. The end to end latency is as given in NVIDIA camera API documentation, which is one frame latency for camera stage, and one for ISP stage. 
+
+We measure the latency of computation in terms of CPU runtime. The optical flow, view synthesis and image sharpening stages take 98\% of total CPU runtime. The CPU  implementation takes 24 seconds for generating output at 6k resolution, of which optical flow generation consumes nearly 70 \% of runtime. We therefore focus on reducing the optical flow stage which dominates not just in terms of latency but also in power consumption. 
+
+
+\subsubsection{Optical flow runtime breakdown}
+The individual stages and the sub-stages of computation are sequential, leading to higher runtimes. By pipelining the differnt pyramid computation stages of optical flow, we can reduce the latency to 0.1 seconds from 16 seconds as shown in \ref{fig:OF_pyr_runtime}.
+
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/pyramid_runtime.png}
+
+	\end{center}
 		\caption{X-axis shows the pyramid level and Y-axis shows the runtime for OF}
-		\label{fig:ex_4_9}
-	\end{center}
-	\vspace{-0.3in}
+\label{fig:OF_pyr_runtime}
 \end{figure} 
-
-\section{Camera Sensor Configuration}
-\subsubsection{Sensor Response Time}
-As the ODS consist of several cameras, it makes sense to reconfigure or turn cameras or off based on the application needs and the scene dynamics. If the camera is not moving and certain portions of the camera views are static, the cameras can be reconfigured dynamically to reduce framerate, resolution, or even turn them on and off as per the needs. We observed that the reconfiguration latency is one frame delay if there are no outstanding requests, and if there are pending camera requests, they will be served first before requesting the frame with new configuration. 
-
-The optical flow works well when the image is has high dynamic range. It is possible that some of the regions in the 360 degree view can be in low lightning, while other are in good lightning conditions. In such cases the stitching fails and can have severe artifacts. We can improve the dynamic range of the particular cameras in low lightning by reconfiguring the camera exposure time dynamically. But such approaches doesn't consider the end to end latency of the cameras and camera movements. To account for camera movements, IMU sensor data can be used to make the camera configuration decisions independent of CPU to accelerate the reconfiguration tasks. 
-
-The figures show the differences in low light capture with and without brightness correction.
-[Integrate the images with histograms]\newline
-	\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equilization.jpg}
-		\caption{X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.}
-		\label{fig:ex_4_9}
-	\end{center}
-	\vspace{-0.3in}
-\end{figure} 
-
-\begin{figure}[h]
-	\begin{center}
-		\includegraphics[width=0.7\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distribution.jpeg}
-		\caption{X-axis shows the pyramid level and Y-axis the runtime tile search and propagate.}
-		\label{fig:ex_4_9}
-	\end{center}
-	\vspace{-0.3in}
-\end{figure} 
-
-%On the other hand we observed that when camera is turned on and off, the first few frames are low contrast and less brighter. It takes [3] frames to get the images with good contrast. startup time needs to be less. 
-%	Initial frames are low contrast but improves over time. Making case for hardware controller to perform camera configuration. 
-	% May be regenerate these figures
-	%/media/gunman/Data/Programming/python_coding
-%	\begin{figure}[h]
-%			\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/sensor0_low_contrast.jpg}
 
 \section{Design Scalability}	
 
@@ -114,24 +114,6 @@ We measure the DRAM capacity required and bandwidth needs as we increase the res
 
 Although we built a system where all the cameras are capturing at same resolution and framerate at a given time, we expect the future cameras make these decisions dynamically to save power. Therefore, we  measure the efficiency of capture and ISP processing at different modes of operation and measure the efficiency of capture and processing in power consumed per pixel at different modes.
 
-%DRAM memory size\newline
-%\begin{tabular}{c|c|c|c|c}
-%	Stage & 3k & 4k & 6k & 8k \\
-%	camera Input & - & - & - & - \\
-%	ISP & - & - & - & - \\
-%	Motion Estimation & - & - & - & - \\
-%	fish2EqRect Projection & - & - & - & - \\
-%	Optical Flow & - & - & - & - \\
-%	Sharpen & - & - & - & - \\
-%\end{tabular} 
-%
-%\vspace{10mm}
-%\begin{tabular}{c|c|c|c|c}
-%	o/p Resolution & 3k & 4k & 6k & 8k \\
-%	Avg. DRAM BW & - & - & - & - \\
-%\end{tabular} 
-%\vspace{30mm}
-
 % Figure 
 \begin{figure*}
 	\begin{center}
@@ -142,9 +124,30 @@ Although we built a system where all the cameras are capturing at same resolutio
 	\vspace{-0.3in}
 \end{figure*} 
 
-\section{Evaluating data-flow redundancies}
-Evaluating redundant computations in optical flow. 
-Accuracy Vs Energy\&Perf tradeoff. 
-Next we evaluate the optical flow for a scene where foreground has movement and background is static. The temporal flow difference is found out to see the variation of flow. As expected we see the flow change only for the regions where the objects are moving. This observation suggests that accuracy of optical flow can be trade-off with computation time to save energy and latency. It also shows that the accuracy drop is less than \_ percent which can be acceptable
 
+
+\section{Different sensor configurations for energy efficiency and quality}
+\subsubsection{Saving sensor power}
+As the ODS consist of several cameras, it makes sense to reconfigure or turn cameras or off based on the application needs and the scene dynamics. If the camera is not moving and certain portions of the camera views are static, the cameras can be reconfigured dynamically to reduce framerate, resolution, or even turn them on and off as per the needs. We observed that the reconfiguration latency is one frame delay if there are no outstanding requests, and if there are pending camera requests, they will be served first before requesting the frame with new configuration. 
+\subsubsection{Improving quality of images in low lightining}
+The optical flow works well when the image is has high dynamic range. It is possible that some of the regions in the 360 degree view can be in low lightning, while other are in good lightning conditions. In such cases the stitching fails and can have severe artifacts. We can improve the dynamic range of the particular cameras in low lightning by reconfiguring the camera exposure time dynamically. But such approaches doesn't consider the end to end latency of the cameras and camera movements. To account for camera movements, IMU sensor data can be used to make the camera configuration decisions independent of CPU to accelerate the reconfiguration tasks. 
+
+The figures \ref{fig:histLow} and  \ref{fig:histHigh} show the differences in low light capture with and without brightness correction.
+	\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equilization.jpg}
+		\caption{Image intensity histogram for low lightning conditions}
+		\label{fig:histLow}
+	\end{center}
+	\vspace{-0.3in}
+\end{figure} 
+
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distribution.jpeg}
+		\caption{Image intensity histogram for good lightning conditions}
+		\label{fig:histHigh}
+	\end{center}
+	\vspace{-0.3in}
+\end{figure} 
 

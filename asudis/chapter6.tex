@@ -1,5 +1,5 @@
 \chapter{Proposed Optimizations}
-
+\label{chap:PropOpt}
 Based on the characterization of end-to-end system pipeline we can group the proposed optimizations into two categories, i.e to optimize for low power and another for low latency. For low power we talk about techniques to reduce sensor power and then about spatio-temporal data reuse during computation. For reducing the compute latency we talk about use of pipelining and parallelism and the expected benefits. 
 
 \subsection{Techniques for Low Power}
@@ -19,7 +19,7 @@ The existing system pipeline consist of multiple subsystems that are not optimiz
 
 The fornt-end of the pipeline which consist of the camera and ISP are optimized in hardware performing realtime processing needed for ODS stitching. But the main contributer of latency in existing systems is the computation of dense stereo correspondence and the view synthesis stages. We estimate the latency reduction of applying the techniques like pipelining and parallelization in the following sub-sections.
 \subsubsection{Pipelined and Parallelized Execution}
-The main source for high latency is the sequential execution of different stages and sub-stages of the stitching pipeline. The stitching pipeline consist of stages like projection, optical flow and view synthesis which are sequentially executed. Pipelining the stages by would bring the latency to max of the latencies of the individual stages, which is ~16 sec of the optical flow. The optical flow again consist of computing results for multiple pyramids, which maximum latency of higher level of pyramid comes around 0.1 sec. By pipelining we can bring down the latency from 16 seconds to 0.1 second. In the next section we discuss how to go from 0.1 sec to real time in the range of 30 fps. \newline
+The main source for high latency is the sequential execution of different stages and sub-stages of the stitching pipeline. The stitching pipeline consist of stages like projection, optical flow and view synthesis which are sequentially executed. Pipelining the stages by would bring the latency to max of the latencies of the individual stages, which is ~16 sec of the optical flow. The optical flow again consist of computing results for multiple pyramids, which maximum latency of higher level of pyramid comes around 0.1 sec. By pipelining we can bring down the latency from 16 seconds to 0.1 second. We estimate these numbers from \cite{denseOFlowXilinx} implementation of dense stereo optical flow reference design. In the next section we discuss how to go from 0.1 sec to real time in the range of 30 fps. \newline
 
 All the tasks in existing software pipeline can be accelerated by using multiple cores. The dense optical flow for 4k resolution on FPGA takes only 17 sec compared to 16 seconds for CPU implementation. 
 
