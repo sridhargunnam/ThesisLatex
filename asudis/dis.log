@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.28)  11 JUL 2018 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.28)  15 JUL 2018 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -993,27 +993,6 @@ Overfull \hbox (43.36464pt too wide) in paragraph at lines 92--93
 
 [9 </media/gunman/Data/thesis/ThesisLatex/data/images/System_overview.png>]
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101 	\\\specialrule
-                     {3pt}{0pt}{0pt}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Misplaced \noalign.
-\specialrule #1#2#3->\noalign 
-                              {\ifnum 0=`}\fi \@aboverulesep =#2\global \@be...
-l.101 	\\\specialrule{3pt}{0pt}{0pt}
-                                    
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) [10 </media/gunman/Data/thesis/ThesisLatex/data/images/Prototype.png>]
@@ -1027,29 +1006,7 @@ Chapter 3.
 
 
 ]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 		\\\specialrule
-                     {3pt}{0pt}{0pt}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Misplaced \noalign.
-\specialrule #1#2#3->\noalign 
-                              {\ifnum 0=`}\fi \@aboverulesep =#2\global \@be...
-l.27 		\\\specialrule{3pt}{0pt}{0pt}
-                                    
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-
-Overfull \hbox (12.44502pt too wide) in paragraph at lines 28--36
+Overfull \hbox (0.62517pt too wide) in paragraph at lines 28--36
 [][] 
  []
 
@@ -1210,24 +1167,24 @@ m1517269835518 . html$[]
 \openout2 = `vita.aux'.
 
  (./vita.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
  (./dis.aux (./abstract.aux) (./ack.aux) (./chapter1.aux)
 (./chapter2.aux) (./chapter4.aux) (./chapter6.aux) (./chapter7.aux) (./vita.aux
 ))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `dis.out' has not changed.
 (rerunfilecheck)             Checksum: 529D1E6CD01DD34043D9A34E38D41C27;1330.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
- 9880 strings out of 492995
- 148621 string characters out of 6135073
+ 9881 strings out of 492995
+ 148633 string characters out of 6135073
  243577 words of memory out of 5000000
  13111 multiletter control sequences out of 15000+600000
  30271 words of font info for 38 fonts, out of 8000000 for 9000
@@ -1239,7 +1196,7 @@ texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on dis.pdf (33 pages, 6352666 bytes).
+Output written on dis.pdf (33 pages, 6352681 bytes).
 PDF statistics:
  417 PDF objects out of 1000 (max. 8388607)
  357 compressed objects within 4 object streams

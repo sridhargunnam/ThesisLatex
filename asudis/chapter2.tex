@@ -14,13 +14,13 @@ Fisheye lenses allow image sensors to capture images within an ultra-wide hemisp
 	\centering
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/fisheye_image_pair.jpg}
+		\includegraphics[width=1\linewidth]{data/images/fisheye_image_pair.jpg}
 		\caption{Pair of spherical fisheye images}
 		\label{fig:Mono input}
 	\end{subfigure}%
 	\begin{subfigure}{.5\textwidth}
 		\centering
-		\includegraphics[width=1\linewidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/fisheye_2_equirect.png}
+		\includegraphics[width=1\linewidth]{data/images/fisheye_2_equirect.png}
 		\caption{Equirectangular projected output}
 		\label{fig:Mono Output}
 	\end{subfigure}
@@ -38,7 +38,7 @@ ODS output consist of two panoramas one for each eye, and provide the binocular 
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/ODS_IO_images.png}
+		\includegraphics[width=1\textwidth]{data/images/ODS_IO_images.png}
 	\end{center}
 		\caption{Left side of the picture shows the multi-view point capture and the right side shows the two ODS panorama, one for each eyes.}	
 \label{fig:ODS_IO}
@@ -49,8 +49,8 @@ The inputs of the ODS system are fisheye images and the outputs are two stereo p
 \subsubsection{Projection Mapping}The equirectangular images as shown in \ref{fig:ODS_Proj} are populated by sourcing image pixels from the fisheye images along a (spherical coordinate to polar coordinate) projection map. As projected pixel coordinates typically fall between integer pixel coordinates, the algorithm typically either pulls a nearest-neighbor pixel or a bilinear combination of a neighborhood of pixels. 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/EqRect_offset_fov_viz_loop_v3.jpg}
-		%\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/EqRect_2_adj_images.jpg}
+		\includegraphics[width=0.5\textwidth]{data/images/EqRect_offset_fov_viz_loop_v3.jpg}
+		%\includegraphics[width=1\textwidth]{data/images/EqRect_2_adj_images.jpg}
 		\caption{Equirectangular Projection of different fisheye images with offsets showing where they belong in the final ODS panorama.}
 		\label{fig:ODS_Proj}
 	\end{center}
@@ -59,7 +59,7 @@ The inputs of the ODS system are fisheye images and the outputs are two stereo p
 \subsubsection{Stereo Correspondence}  As the two fisheye cameras do not precisely occupy the same point in space, objects at the edges of fisheye images appear in different positions in the images, dependent on their distances from the camera. This phenomenon is called the parallax effect. To ensure that objects appear properly, a correspondence algorithm identifies matching visual features across image pairs, warping the projection to reduce object seams in the image. For ODS, we need dense stereo correspondence between the adjacent views to generate novel views as shown in \ref{fig:stereo_disparity}. We generate the stereo correspondence using spatial optical flow, i.e the optical flow between adjacent cameras. The optical flow signifies how far or how near a point is from the capture rig. 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/stereo_disparity.png}		
+		\includegraphics[width=1\textwidth]{data/images/stereo_disparity.png}		
 	\end{center}
 	\caption{From the overlapping view of adjacent views, we get stereo disparity, i.e how far each point is away from the camera.}
 	\label{fig:stereo_disparity}
@@ -76,7 +76,7 @@ The end to end system consist of four main stages viz., image sensor, image sign
  
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/System_overview.png}
+		\includegraphics[width=1\textwidth]{data/images/System_overview.png}
 	\end{center}
 		\caption{System overview, the Camera, ISP, Processor and Storage.}
 \label{fig:Sys_overview}
@@ -89,7 +89,7 @@ We have 3 major components, the cameras, the support rig and the evaluation plat
 For camera capture we use the libargus camera api provided by Nvidia. For stitching we adapt the facebook surround 360 to work on our platform.
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=1.1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Prototype.png}
+		\includegraphics[width=1.1\textwidth]{data/images/Prototype.png}
 	\end{center}
 	\caption{Camera capture rig and the evaluation platform}
 	\label{fig:Prototype}
@@ -98,7 +98,7 @@ For camera capture we use the libargus camera api provided by Nvidia. For stitch
 
 \begin{table}[h]
 
-	\\\specialrule{3pt}{0pt}{0pt}
+%	\\\specialrule{3pt}{0pt}{0pt}
 \begin{tabular}{!{\VRule[2pt]}c|!{\VRule[2pt]}c!{\VRule[2pt]}}
 	
 	\textbf{Cameras} &  \\\specialrule{3pt}{0pt}{0pt}

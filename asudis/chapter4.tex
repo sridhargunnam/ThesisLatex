@@ -24,14 +24,14 @@ We first highlight the overall system energy profile. For the calculating the en
 \subsubsection{Individual stage energy}
 
 \begin{table}[h]
-		\\\specialrule{3pt}{0pt}{0pt}
+%		\\\specialrule{3pt}{0pt}{0pt}
 	\begin{tabular}
 		{!{\VRule[2pt]}c|!{\VRule[2pt]}c!{\VRule[2pt]}c!{\VRule[2pt]}c!{\VRule[2pt]}}
-	Subsystem & Current(mA) & Voltage(mV) & Energy( mJ/frm) \\\specialrule{2pt}{0pt}{0pt}
+	Subsystem & Current(mA) & Voltage(mV) & Energy( mJ/frame) \\\specialrule{2pt}{0pt}{0pt}
 	Sony IMX-274 (Camera) & 375.4 & 3336 & 41.7 \\\hdashline
 	ISP+CODEC (TX2) & 102.7 & 19152 & 65.6 	\\\hdashline
-	ARM-A57(Cap. + Stitch*) & 16.4 + 120 (16s) & 19144 & 10.5 + 36,736	\\\hdashline
-	DRAM (Cap. + Stitch*)  & 260.4 + 105 (16s)  & 4792 & 41.6 + 105*16 	\\\specialrule{2pt}{0pt}{0pt}
+	ARM-A57(Cap. + Stitch*) & 16.4 + 120* & 19144 & 10.5 + 36,736	\\\hdashline
+	DRAM (Cap. + Stitch*)  & 260.4 + 105*  & 4792 & 41.6 + 1680 	\\\specialrule{2pt}{0pt}{0pt}
 	\end{tabular} 
 	\caption{Energy Characterization of Individual Stages}
 \label{Tab:Energy_Char}
@@ -43,7 +43,7 @@ We first highlight the overall system energy profile. For the calculating the en
 Natural images are redundant and but sensors are not smart to capture only the variations of the scene. Instead sensors capture and convert all the pixels for all the temporal frames. This leads to redundant conversion cycles by ADC's inside the sensor. It is therefore important to reuse the previous data to reduce the conversion cycles of the ADC to reduce the sensor power. 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Best_case_rio_presentation.jpg}
+		\includegraphics[width=1\textwidth]{data/images/Best_case_rio_presentation.jpg}
 	\end{center}
 	\caption{X axis shows the variations of pixels across 1000 consecutive frames, Y axis shows total number of pixels with a particular variation}	
 	\label{fig:sensorRedundancy}
@@ -54,7 +54,7 @@ As shown in the \ref{fig:pieCapPow}, the interfaces consume about one third of t
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/chart.png}
+		\includegraphics[width=1\textwidth]{data/images/chart.png}
 	\end{center}
 	\caption{Chart showing the distribution of power of different components during capture and storage.}	
 	\label{fig:pieCapPow}
@@ -84,7 +84,7 @@ The individual stages and the sub-stages of computation are sequential, leading 
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/pyramid_runtime.png}
+		\includegraphics[width=1\textwidth]{data/images/pyramid_runtime.png}
 
 	\end{center}
 		\caption{X-axis shows the pyramid level and Y-axis shows the runtime for OF}
@@ -97,7 +97,7 @@ The individual stages and the sub-stages of computation are sequential, leading 
 As discussed in chapter 2 related work, the resolution required for next generation VR is at-least 16k and frame-rates greater than 120. For our evaluation, we assume that energy scales linear with frame-rate and focus our evaluation on scalability of increasing resolution. We can see in fig that even the runtime scales almost linearly with the resolution. Notice that optical flow dominates the total runtime, followed by view synthesis and image sharpening. We also measure the frequencies of CPU, DRAM controller with increasing resolution and observe [linear] dependency of clock frequency on the resolution.
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/ExecutionTimeComputeStages.png}
+		\includegraphics[width=1\textwidth]{data/images/ExecutionTimeComputeStages.png}
 		\caption{CPU execution time of different compute stages. X axis has different sub-stages in optical flow and Y axis correspond to energy per frame.}
 		\label{fig:ex_4_9}
 	\end{center}
@@ -117,7 +117,7 @@ Although we built a system where all the cameras are capturing at same resolutio
 % Figure 
 \begin{figure*}
 	\begin{center}
-		\includegraphics[width=1\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Camera_ISP_Stages_in_different_configurations.png}
+		\includegraphics[width=1\textwidth]{data/images/Power_Efficiency_of_Camera_ISP_Stages_in_different_configurations.png}
 		\caption{Power Efficiency of Camera ISP Stages in different configurations}
 		\label{fig:ex_4_9}
 	\end{center}
@@ -135,7 +135,7 @@ The optical flow works well when the image is has high dynamic range. It is poss
 The figures \ref{fig:histLow} and  \ref{fig:histHigh} show the differences in low light capture with and without brightness correction.
 	\begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equilization.jpg}
+		\includegraphics[width=0.8\textwidth]{data/images/Before_Histogram_equilization.jpg}
 		\caption{Image intensity histogram for low lightning conditions}
 		\label{fig:histLow}
 	\end{center}
@@ -144,7 +144,7 @@ The figures \ref{fig:histLow} and  \ref{fig:histHigh} show the differences in lo
 
 \begin{figure}[h]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{/media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distribution.jpeg}
+		\includegraphics[width=0.8\textwidth]{data/images/Normal_Histogram_Distribution.jpeg}
 		\caption{Image intensity histogram for good lightning conditions}
 		\label{fig:histHigh}
 	\end{center}
