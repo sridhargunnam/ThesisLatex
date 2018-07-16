@@ -1,13 +1,13 @@
 \chapter{Related Work and Background}
 
 \section{Related Work}
-The methods of capturing omnidirectional stereo to capture environment maps has been around for few decades and is well established in \cite{peleg2001omnistereo, kang2000geometry, ishiguro1990omni}. But these techniques used rotating camera and capturing multiple view points of 360 degree view to generate final stereoscopic output. Such rotating setups can only be used for still captures. Others \cite{richardt2013megastereo,ho2017dual} shows VR panorama generation using a mobile camera device or with lesser number of cameras. But the first robust implementations of ODS  video stitching was demonstrated by \cite{richardt2017video,fbSurround360}. But the challenge with these and other commercial systems is they are used only for capture and stitching ODS is offloaded to either desktop or to cloud. The cloud based stitching is not optimized for latency and power. Sending large amounts of unprocessed frames to cloud takes longer time, and the need for compression and decompression makes the real-time streaming solution difficult in offloading based solutions. Also these solutions currently use several 1000's of CPU's, if not several GPU's in order to stitch ODS at 4k resolution. Such high compute resource is not scalable to larger audience. For example, if 10 percent of US population were to use such solutions we will need the power produced by more than 15 hoover dams. 
+The methods of capturing omnidirectional stereo to capture environment maps has been around for few decades and is well established in \cite{peleg2001omnistereo, kang2000geometry, ishiguro1990omni}. But these techniques use rotating camera and capture multiple viewpoints of 360 degree view to generate final stereoscopic output. Such rotating setups can only be used for still captures. Others \cite{richardt2013megastereo,ho2017dual} show VR panorama generation using a mobile camera device or with lesser number of cameras. But the first robust implementations of ODS video stitching were demonstrated by \cite{richardt2017video,fbSurround360}. But the challenge with these and other commercial systems is that they are used only for capture and stitching ODS is offloaded to either desktop or to cloud. The cloud based stitching is not optimized for latency and power. Sending large amounts of unprocessed frames to cloud takes longer time, and the need for compression and decompression makes the real-time streaming solution difficult in offloading based solutions. Also these solutions currently use several 1000's of CPU's, if not several GPU's in order to stitch ODS at 4k resolution. Such high compute resource is not scalable to larger audience. 
 
 \section{Background}
-In this section, we will discuss about different types 360 videos, then about the system level overview and the data flow within the system. We provide some necessary background to understand the image stitching pipeline by visually showing the intermediate outputs. 
+In this section, we will discuss different types 360 videos, then the system level overview and the data flow within the system. We provide some necessary background to understand the image stitching pipeline by visually showing the intermediate outputs. 
 
 \subsection{Types of 360 degree videos}
-There are mainly ways three types of 360 capturing viz, monoscopic, Omni-directional Stereo(ODS), and Light Field cameras. In this work we will focus on monoscopic and stereoscopic cameras. 
+There are mainly ways three types of 360 capturing : monoscopic, Omni-directional Stereo(ODS), and Light Field cameras. In this work we will focus on monoscopic and ODS cameras. 
 \subsubsection{Monoscopic 360 Degree}
 Fisheye lenses allow image sensors to capture images within an ultra-wide hemispheric field of view. With two fisheye-lensed sensors that capture complementary fields of view each of over 180\textdegree , the pair of captured images can be processed to achieve over a spherical 360\textdegree  x 180\textdegree  area, as shown in \ref{fig:Mono} The equirectangular projection format is a common format for 360\textdegree  x 180\textdegree  images, allowing remapping to other projections for convenient viewing. To create equirectangular images, the paired fisheye capture data  goes though multiple stage, Viz, Projection Mapping, Correspondence(optical flow), view synthesis, and compression.
 \begin{figure}[h]
@@ -31,10 +31,7 @@ Fisheye lenses allow image sensors to capture images within an ultra-wide hemisp
 
 
 \subsubsection{Omni-directional Stereo(ODS)}
-ODS output consist of two panoramas one for each eye, and provide the binocular stereo needed for perceiving depth information of the scene with respect to the view point of capturing device. In order to generate such output, we need to capture stereo information from all the viewing directions. Instead of capturing from all the viewing directions, we capture in certain directions, equally distributed over the 360 degree viewing angle and later process them to get the virtual camera viewpoints. We finally get the two panoramas one for each eye, which helps see the 360 view with depth. The inputs and outputs can be seen in \ref{fig:ODS_IO}.
-
-
-
+ODS output consists of two panoramas one for each eye, and provide the binocular stereo needed for perceiving depth information of the scene with respect to the view point of capturing device. In order to generate such output, we need to capture stereo information from all the viewing directions. Instead of capturing from all the viewing directions, we capture in certain directions, equally distributed over the 360 degree viewing angle and later process them to get the virtual camera viewpoints. We finally get the two panoramas(one for each eye), which helps see the 360 view with depth. The inputs and outputs can be seen in \ref{fig:ODS_IO}.
 
 \begin{figure}[h]
 	\begin{center}
@@ -46,7 +43,7 @@ ODS output consist of two panoramas one for each eye, and provide the binocular 
 
 \subsection{Stages in ODS Stitching}
 The inputs of the ODS system are fisheye images and the outputs are two stereo panoramas. We will need multiple view points so that we can capture both in 360 and in depth. But at high level both for monoscopic and stereoscopic we need to go though the same stages for generating output viz., Projection Mapping, Correspondence, blending, compression.
-\subsubsection{Projection Mapping}The equirectangular images as shown in \ref{fig:ODS_Proj} are populated by sourcing image pixels from the fisheye images along a (spherical coordinate to polar coordinate) projection map. As projected pixel coordinates typically fall between integer pixel coordinates, the algorithm typically either pulls a nearest-neighbor pixel or a bilinear combination of a neighborhood of pixels. 
+\subsubsection{Projection Mapping}The equirectangular images shown in \ref{fig:ODS_Proj} are populated by sourcing image pixels from the fisheye images along a (spherical coordinate to polar coordinate) projection map. As projected pixel coordinates typically fall between integer pixel coordinates, the algorithm typically either pulls a nearest-neighbor pixel or a bilinear combination of a neighborhood of pixels. 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{data/images/EqRect_offset_fov_viz_loop_v3.jpg}
@@ -72,7 +69,7 @@ The ODS needs novel camera views so that it can collect rays from all the direct
 
 \section{System Overview and Data Flow}
 
-The end to end system consist of four main stages viz., image sensor, image signal processor(ISP), processor, and Off-chip memory, as shown in \ref{fig:Sys_overview} The image sensor captures raw images, which are processed by ISP to generate RGB images and the DRAM supports for storage of images and data for all the above stages. The ISP is typically integrated with the processor SoC, and Camera and DRAM are implemented in separate chips.
+The end to end system consist of four main stages : image sensor, image signal processor(ISP), processor, and Off-chip memory, as shown in \ref{fig:Sys_overview} The image sensor captures raw images, which are processed by ISP to generate RGB images and the DRAM supports for storage of images and data for all the above stages. The ISP is typically integrated with the processor SoC, and Camera and DRAM are implemented in separate chips.
  
 \begin{figure}[h]
 	\begin{center}

@@ -15,6 +15,8 @@
 \usepackage{textcomp} % for degree symbol
 \usepackage{array,booktabs,arydshln,xcolor}
 \usepackage{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\usepackage{soul} % for strike
 \newcommand\VRule[1][\arrayrulewidth]{\vrule width #1}
 \begin{document}
 %-----------------------front matter
@@ -65,12 +67,10 @@
 \doublespace
 \pagenumbering{arabic}
 \include{chapter1} % Intro
-\include{chapter2} % Background
-%\include{chapter3} % Characterization and Bottlenecks(Research Questions)
-\include{chapter4} % Research Questions
-%\include{chapter5} % Proposed Mechanisms
-\include{chapter6} % Discussions
-\include{chapter7} % Conclusion and Future Work
+\include{chapter2} % Related Work and Background
+\include{chapter4} % Characterization
+\include{chapter6} % Proposed Optimizations
+\include{chapter7} % Conclusion
 %-----------------------back matter
 {\singlespace
 % Making the references a "part" rather than a chapter gets it indented at

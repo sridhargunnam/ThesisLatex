@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{11}
 \newcommand{\enquote}[1]{``#1''}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
@@ -19,6 +19,12 @@ facebook, \enquote{Facebook surround 360},
 Ho, T. and M.~Budagavi, \enquote{Dual-fisheye lens stitching for 360-degree
   imaging}, in \enquote{Acoustics, Speech and Signal Processing (ICASSP), 2017
   IEEE International Conference on}, pp. 2172--2176 (IEEE, 2017).
+
+\bibitem[Hu \emph{et~al.}(2018)]{hu2018characterizing}
+Hu, J., J.~Yang, V.~Delhivala and R.~LiKamWa, \enquote{Characterizing the
+  reconfiguration latency of image sensor resolution on android devices}, in
+  \enquote{Proceedings of the 19th International Workshop on Mobile Computing
+  Systems \& Applications}, pp. 81--86 (ACM, 2018).
 
 \bibitem[Ishiguro \emph{et~al.}(1990)]{ishiguro1990omni}
 Ishiguro, H., M.~Yamamoto and S.~Tsuji, \enquote{Omni-directional stereo for
@@ -46,9 +52,13 @@ Richardt, C., J.~Tompkin, J.~Halsey, A.~Hertzmann, J.~Starck and O.~Wang,
   \enquote{Video for virtual reality}, in \enquote{ACM SIGGRAPH 2017 Courses},
   p.~16 (ACM, 2017).
 
-\bibitem[XilinxDenseOF(2017)]{denseOFlowXilinx}
-XilinxDenseOF, \enquote{Dense optical flow on xilinx zynq ultrascale+},
+\bibitem[SDSoC(2017)]{denseOFlowXilinx}
+SDSoC, X., \enquote{Dense pyramidal lk optical flow},
   \urlprefix\url{https://www.xilinx.com/html_docs/xilinx2018_1/sdsoc_doc/oqm1517269835518.html}
   (2017).
+
+\bibitem[Zynq(2017)]{4k60fpsZynqFPGA}
+Zynq, X., \enquote{4k60fps dense optical flow on zynq},
+  \urlprefix\url{https://www.slideshare.net/embeddedvision} (2017).
 
 \end{thebibliography}

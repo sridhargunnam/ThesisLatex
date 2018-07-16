@@ -15,49 +15,52 @@ Warning--entry type for "fbSurround360" isn't style-file defined
 --line 56 of file dis.bib
 Warning--entry type for "denseOFlowXilinx" isn't style-file defined
 --line 64 of file dis.bib
-You're missing a field name---line 68 of file dis.bib
- :  url = {https://www.xilinx.com/html_docs/xilinx2018_1/sdsoc_doc/oqm1517269835518.html}, 
- :                                                                                         %https://www.slideshare.net/embeddedvision/opencv-on-zynq-accelerating-4k60-dense-optical-flow-and-stereo-vision-a-presentation-from-xilinx},
+Warning--entry type for "4k60fpsZynqFPGA" isn't style-file defined
+--line 72 of file dis.bib
+You're missing a field name---line 77 of file dis.bib
+ :  
+ :  %https://www.slideshare.net/embeddedvision/opencv-on-zynq-accelerating-4k60-dense-optical-flow-and-stereo-vision-a-presentation-from-xilinx
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You've used 9 entries,
+You've used 11 entries,
             2456 wiz_defined-function locations,
-            709 strings with 6837 characters,
-and the built_in function-call counts, 4496 in all, are:
-= -- 414
-> -- 174
-< -- 9
-+ -- 63
-- -- 52
-* -- 388
-:= -- 724
-add.period$ -- 9
-call.type$ -- 9
-change.case$ -- 71
-chr.to.int$ -- 9
-cite$ -- 9
-duplicate$ -- 208
-empty$ -- 378
-format.name$ -- 70
-if$ -- 960
+            718 strings with 7119 characters,
+and the built_in function-call counts, 5343 in all, are:
+= -- 491
+> -- 208
+< -- 11
++ -- 75
+- -- 62
+* -- 460
+:= -- 868
+add.period$ -- 11
+call.type$ -- 11
+change.case$ -- 86
+chr.to.int$ -- 11
+cite$ -- 11
+duplicate$ -- 248
+empty$ -- 448
+format.name$ -- 83
+if$ -- 1137
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 7
-newline$ -- 35
-num.names$ -- 27
-pop$ -- 69
+missing$ -- 8
+newline$ -- 41
+num.names$ -- 33
+pop$ -- 82
 preamble$ -- 1
-purify$ -- 71
+purify$ -- 86
 quote$ -- 0
-skip$ -- 158
+skip$ -- 187
 stack$ -- 0
-substring$ -- 294
-swap$ -- 85
-text.length$ -- 6
+substring$ -- 342
+swap$ -- 99
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 54
+type$ -- 66
 warning$ -- 0
-while$ -- 36
+while$ -- 43
 width$ -- 0
-write$ -- 104
+write$ -- 125
 (There was 1 error message)
