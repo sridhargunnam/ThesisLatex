@@ -9,6 +9,6 @@ Figure\nobreakspace {}\hfill Page \par
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Chart showing the distribution of power of different components during capture and storage.\relax }}{16}{figure.caption.22}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces X-axis shows the pyramid level and Y-axis shows the runtime for OF\relax }}{18}{figure.caption.27}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces CPU execution time of different compute stages. X axis has different sub-stages in optical flow and Y axis correspond to energy per frame.\relax }}{19}{figure.caption.29}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Power Efficiency of Camera ISP Stages in different configurations\relax }}{20}{figure.caption.31}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Energy Efficiency of Camera ISP Stages in different configurations\relax }}{20}{figure.caption.31}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Image intensity histogram for low lightning conditions\relax }}{21}{figure.caption.34}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Image intensity histogram for good lightning conditions\relax }}{22}{figure.caption.35}

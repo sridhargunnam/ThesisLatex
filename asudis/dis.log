@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.28)  16 JUL 2018 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.1.28)  16 JUL 2018 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1004,6 +1004,27 @@ Overfull \hbox (43.36464pt too wide) in paragraph at lines 89--90
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 	\\\specialrule
+                    {3pt}{0pt}{0pt}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Misplaced \noalign.
+\specialrule #1#2#3->\noalign 
+                              {\ifnum 0=`}\fi \@aboverulesep =#2\global \@be...
+l.98 	\\\specialrule{3pt}{0pt}{0pt}
+                                   
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) [9 </media/gunman/Data/thesis/ThesisLatex/data/images/System_overview.png>]
@@ -1018,6 +1039,28 @@ Chapter 3.
 
 
 ]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 		\\\specialrule
+                     {3pt}{0pt}{0pt}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Misplaced \noalign.
+\specialrule #1#2#3->\noalign 
+                              {\ifnum 0=`}\fi \@aboverulesep =#2\global \@be...
+l.27 		\\\specialrule{3pt}{0pt}{0pt}
+                                    
+I expect to see \noalign only after the \cr of
+an alignment. Proceed, and I'll ignore this case.
+
+
 Overfull \hbox (0.62517pt too wide) in paragraph at lines 28--36
 [][] 
  []
@@ -1086,20 +1129,21 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18 </media/gunman/Data/thesis/ThesisLatex/data/images/pyramid_runtime.png (PNG
  copy)>]
-</media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Camera_I
-SP_Stages_in_different_configurations.png, id=310, 811.03pt x 500.87125pt>
-File: /media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Cam
-era_ISP_Stages_in_different_configurations.png Graphic file (type png)
-<use /media/gunman/Data/thesis/ThesisLatex/data/images/Power_Efficiency_of_Came
-ra_ISP_Stages_in_different_configurations.png>
-Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Powe
-r_Efficiency_of_Camera_ISP_Stages_in_different_configurations.png  used on inpu
-t line 120. on input line 120.
+</media/gunman/Data/thesis/ThesisLatex/data/images/EnergyEfficiencyofCameraandI
+SPStagesinDifferentCameraConfigurations.png, id=310, 811.03pt x 500.87125pt>
+File: /media/gunman/Data/thesis/ThesisLatex/data/images/EnergyEfficiencyofCamer
+aandISPStagesinDifferentCameraConfigurations.png Graphic file (type png)
+<use /media/gunman/Data/thesis/ThesisLatex/data/images/EnergyEfficiencyofCamera
+andISPStagesinDifferentCameraConfigurations.png>
+Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Ener
+gyEfficiencyofCameraandISPStagesinDifferentCameraConfigurations.png  used on in
+put line 120. on input line 120.
 Package pdftex.def Info: Requested size: 433.62001pt x 267.79915pt on input lin
 e 120.
  [19 </media/gunman/Data/thesis/ThesisLatex/data/images/ExecutionTimeComputeSta
-ges.png (PNG copy)>] [20 </media/gunman/Data/thesis/ThesisLatex/data/images/Pow
-er_Efficiency_of_Camera_ISP_Stages_in_different_configurations.png (PNG copy)>]
+ges.png (PNG copy)>] [20 </media/gunman/Data/thesis/ThesisLatex/data/images/Ene
+rgyEfficiencyofCameraandISPStagesinDifferentCameraConfigurations.png (PNG copy)
+>]
 </media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equilizatio
 n.jpg, id=324, 462.528pt x 346.896pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equili
@@ -1107,9 +1151,9 @@ zation.jpg Graphic file (type jpg)
 <use /media/gunman/Data/thesis/ThesisLatex/data/images/Before_Histogram_equiliz
 ation.jpg>
 Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Befo
-re_Histogram_equilization.jpg  used on input line 138. on input line 138.
+re_Histogram_equilization.jpg  used on input line 137. on input line 137.
 Package pdftex.def Info: Requested size: 346.89732pt x 260.18723pt on input lin
-e 138.
+e 137.
 </media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distributio
 n.jpeg, id=325, 462.528pt x 346.896pt>
 File: /media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distri
@@ -1117,9 +1161,9 @@ bution.jpeg Graphic file (type jpg)
 <use /media/gunman/Data/thesis/ThesisLatex/data/images/Normal_Histogram_Distrib
 ution.jpeg>
 Package pdftex.def Info: /media/gunman/Data/thesis/ThesisLatex/data/images/Norm
-al_Histogram_Distribution.jpeg  used on input line 147. on input line 147.
+al_Histogram_Distribution.jpeg  used on input line 146. on input line 146.
 Package pdftex.def Info: Requested size: 346.89732pt x 260.18723pt on input lin
-e 147.
+e 146.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1182,8 +1226,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
  10058 strings out of 492995
- 150922 string characters out of 6135073
- 247057 words of memory out of 5000000
+ 150932 string characters out of 6135073
+ 247058 words of memory out of 5000000
  13281 multiletter control sequences out of 15000+600000
  30584 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1194,7 +1238,7 @@ texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/
 lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/f
 onts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmro12.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on dis.pdf (33 pages, 6353482 bytes).
+Output written on dis.pdf (33 pages, 6351324 bytes).
 PDF statistics:
  425 PDF objects out of 1000 (max. 8388607)
  365 compressed objects within 4 object streams
